@@ -1,0 +1,15 @@
+<div class="contact-details">
+  <h2>Contact</h2>
+  <p>Address Details Go Here</p>
+  <div class="contact-form">
+    <%= form_tag('/contact', method: 'post') do %>
+      <%= label_tag(:email, 'Email') %>
+      <%= email_field(:user, :address) %>
+      <%= label_tag(:name, 'Name') %>
+      <%= text_field_tag(:name) %>
+      <%= label_tag(:message) %>
+      <%= text_area_tag(:message) %>
+      <%= submit_tag('Send') %>
+  <% end %>
+  </div>
+</div>

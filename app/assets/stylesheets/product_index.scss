@@ -1,0 +1,26 @@
+.page-name {
+  margin: 0;
+  padding: 0 0 0 2rem;
+  height: 60px;
+}
+
+.slider.multiple-items {
+  margin: 0 10rem;
+}
+
+img.carousel-image {
+  height: 40rem;
+  margin: auto auto;
+}
+
+.item-text {
+  font-family: "futura-pt",sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  letter-spacing: 0.1rem;
+  text-align: center;
+}
+
+.slick-prev:before, .slick-next:before {
+  color:gray !important;
+}

@@ -1,0 +1,31 @@
+<script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.5.0/slick.min.js"></script>
+<section class="col-md-12 title-wrap">
+</section>
+  <h2 class="page-name">Women | Bottoms</h2>
+
+  <div class="slider multiple-items">
+    <% if @womens_bottoms.any? %>
+      <% @womens_bottoms.each do |bottoms| %>
+        <div class="item">
+          <img class="carousel-image" src="<%= bottoms.product.product_images.first.photo.url %>"/>
+        </div>
+      <% end %>
+      <% else %>
+        <p>There are currently no bottoms available.</p>
+    <% end %>
+  </div>
+
+
+<script>
+  $(document).ready(function () {
+
+      $('.multiple-items').slick({
+          infinite: true,
+          speed: 300,
+          slidesToShow: 3,
+          slidesToScroll: 2
+      });
+
+
+  });
+</script>

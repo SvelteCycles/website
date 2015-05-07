@@ -1,0 +1,96 @@
+<section class="title-wrap">
+  <h4 class="page-name">ADMIN</h4>
+</section>
+
+<section class="col-md-12">
+  <% if flash[:notice] %>
+    <h4 class="notice"><%= flash[:notice] %></h4>
+  <% end %>
+</section>
+
+<section class="button-wrap col-md-12">
+  <section class="col-md-4">
+    <button class="admin-button"><%= link_to 'Add New Product', new_product_path %></button>
+  </section>
+  <section class="col-md-4">
+    <button class="admin-button"><%= link_to 'Add New Inventory', new_inventory_path %></button>
+  </section>
+  <section class="col-md-4">
+    <% if user_signed_in? %>
+    <button class="admin-button"><%= link_to "Sign out", destroy_user_session_path, method: :delete %></button>
+    <% end %>
+  </section>
+</section>
+
+<section class="new-product-form col-md-6">
+  <section class="col-md-12">
+    <h2 class="admin-title">Products</h2>
+  </section>
+    <section class="admin-wrap col-md-12">
+      <% @products.each do |product| %>
+          <section class="col-md-4 main-admin-row">
+            <% product.product_images.each do |image| %>
+            <%= image_tag image.photo.url, :class => "admin-image" %>
+            <% end %>
+          </section>
+          <section class="col-md-4 main-admin-row">
+            <h4 class="main-admin-text"><%= product.name %></h4>
+          </section>
+          <section class="col-md-4 main-admin-row">
+            <h4 class="main-admin-text">£<%= product.price %></h4>
+          </section>
+          <section class="col-md-3 second-admin-row">
+            <h6 class="second-admin-text"><%= product.description[0,99] %>...</h6>
+          </section>
+          <section class="col-md-3 second-admin-row">
+            <h6 class="second-admin-text"><%= product.details[0,99] %>...</h6>
+          </section>
+          <section class="col-md-2 second-admin-row">
+            <h6 class="second-admin-text"><%= product.category.category %></h6>
+          </section>
+          <section class="col-md-2 second-admin-row">
+            <h6 class="second-admin-text"><%= link_to "Edit", edit_product_path(product) %></h6>
+          </section>
+          <section class="col-md-2 second-admin-row">
+            <h6 class="second-admin-text"><%= link_to "Delete", product_path(product), method: :delete %></h6>
+          </section>
+      </section>
+      <% end %>
+</section>
+
+<section class="new-inventories-form col-md-6">
+  <section class="col-md-12">
+    <h2 class="admin-title">Inventories</h2>
+  </section>
+    <section class="admin-wrap col-md-12">
+      <% @inventories.each do |inventory| %>
+      <section class="col-md-4 main-admin-row">
+        <img class="admin-image" src="<%= inventory.product_images.first.photo.url %>">
+      </section>
+      <section class="col-md-4 main-admin-row">
+        <h4 class="main-admin-text"><%= inventory.sku %></h4>
+      </section>
+      <section class="col-md-4 main-admin-row">
+        <h4 class="main-admin-text"><%= inventory.product.name %></h4>
+      </section>
+      <section class="col-md-2 second-admin-row">
+        <h6 class="second-admin-text"><%= inventory.size.size %></h6>
+      </section>
+      <section class="col-md-2 second-admin-row">
+        <h6 class="second-admin-text"><%= inventory.gender.sex %></h6>
+      </section>
+      <section class="col-md-2 second-admin-row">
+        <h6 class="second-admin-text"><%= inventory.colour.colour %></h6>
+      </section>
+      <section class="col-md-2 second-admin-row">
+        <h6 class="second-admin-text"><%= inventory.quantity %></h6>
+      </section>
+      <section class="col-md-2 second-admin-row">
+        <h6 class="second-admin-text"><%= link_to "Edit", edit_inventory_path(inventory) %></h6>
+      </section>
+      <section class="col-md-2 second-admin-row">
+        <h6 class="second-admin-text"><%= link_to "Delete", inventory_path(inventory), method: :delete %></h6>
+      </section>
+  </section>
+  <% end %>
+</section>

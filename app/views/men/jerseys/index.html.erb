@@ -1,0 +1,42 @@
+<section class="row">
+
+  <section class="title-wrap col-md-12">
+    <h2 class="page-name"><a href="/men">Men</a> | Jerseys </h2>
+  </section>
+
+    <!-- <% if @mens_jerseys.any? %>
+        <% @mens_jerseys.each do |jersey| %>
+      <section class="col-md-4 category-product-wrap">
+        <section class="product-name-link">
+          <%= link_to jersey.name, jersey_path(jersey), :class => "product-name-link" %>
+          £<%= jersey.price %>
+        </section>
+          <img src="../assets/1.png"/ class="product-category-image">
+          <% jersey.product_images.each do |image| %>
+          <%= image_tag image.photo.url %>
+        <% end %>
+      </section>
+    <% end %>
+      <% else %>
+        <p>Currently no jerseys available</p>
+    <% end %> -->
+
+    <!-- <section id="product-category-carousel" class="multiple-items">
+      <% if @mens_jerseys.any? %>
+        <%= @mens_jerseys.each do |jersey| %>
+        <div class="product-category-slide"><img class="slideshow-category-image" src="/assets/1.png"></div>
+        <% end %>
+        <% else %>
+          <p>Currently No Jerseys Available</p>
+        <% end %>
+    </section> -->
+
+    <section id="product-carousel" class="multiple-items">
+      <div><img class="slideshow-image" src="https://s3-eu-west-1.amazonaws.com/svelte/home-background2.jpeg"></div>
+      <div><img class="slideshow-image" src="https://s3-eu-west-1.amazonaws.com/svelte/home-background3.jpg"></div>
+      <div><img class="slideshow-image" src="https://s3-eu-west-1.amazonaws.com/svelte/IMG_0043.JPG"></div>
+    </section>
+
+    <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.5.0/slick.min.js"></script>
+
+</section>

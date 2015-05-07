@@ -1,0 +1,18 @@
+<section class="col-md-12 title-wrap">
+  <h2 class="page-name">Men</h2>
+</section>
+
+<% if @mens_inventory.any? %>
+  <% @mens_inventory.each do |product| %>
+    <section class="col-md-4">
+      <a href="/men/<%= product.product.category.category %>/<%= product.id %>">
+      <img class="gender-product-image" src="<%= product.product_images[0].photo.url %>">
+      </a>
+      <h4 class="gender-product-name"><%= product.product.name.upcase %></h4>
+      <h6 class="gender-product-price">£<%= product.product.price %></h4>
+    </section>
+  <% end %>
+<% else %>
+  <p class="gender-no-items">There is no items currently available.</p><br>
+  <p class="gender-no-items">Please check again soon!</p>
+<% end %>

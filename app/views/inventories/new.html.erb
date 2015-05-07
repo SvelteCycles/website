@@ -1,0 +1,43 @@
+<h3>Add new inventory</h3>
+
+<%= form_for @inventory, url: {action: 'create'}, html: {multipart: true} do |f| %>
+  <p>
+    <%= f.label :product %>
+    <%= f.collection_select :product_id, @products, :id, :name, :prompt => "Select a product" %>
+  </p>
+
+  <p>
+    <%= f.label :gender %>
+    <%= f.collection_select :gender_id, @genders, :id, :sex, :prompt => "Select a gender" %>
+  </p>
+
+  <p>
+    <%= f.label :size %>
+    <%= f.collection_select :size_id, @sizes, :id, :size, :prompt => "Select a size" %>
+  </p>
+
+  <p>
+    <%= f.label :colour %>
+    <%= f.collection_select :colour_id, @colours, :id, :colour, :prompt => "Select a colour" %>
+  </p>
+
+  <p>
+    <%= f.label :quantity %>
+    <%= f.number_field :quantity %>
+  </p>
+
+  <p>
+    <%= f.label :sku %>
+    <%= f.text_field :sku %>
+  </p>
+
+  <p>
+    <%= f.label :photos %>
+    <%= file_field_tag "photos[]", type: :file, multiple: true %>
+  </p>
+
+  <p>
+    <%= f.submit "Add to inventory" %>
+  </p>
+
+  <% end %>

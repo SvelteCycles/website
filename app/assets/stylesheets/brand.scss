@@ -1,0 +1,35 @@
+// Place all the styles related to the Brand controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.brand-details {
+  font-family: "futura-pt", sans-serif;
+  width: 34em;
+  height: 24em;
+  left: 50%;
+  margin: 7em 0 0 -17em;
+  position: absolute;
+  padding: 0 5em;
+}
+
+.brand-details h2 {
+  font-size: 1.5em;
+  line-height: 3em;
+  border-bottom: 1px solid black;
+  text-align: center;
+  width: 100%;
+  text-transform: uppercase;
+  margin: 0;
+  text-align: center;
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+
+.brand-description p {
+  font-size: 1em;
+  text-align: justify;
+  letter-spacing: 1px;
+  padding-top: 17px;
+  width: 100%;
+  float: left;
+}

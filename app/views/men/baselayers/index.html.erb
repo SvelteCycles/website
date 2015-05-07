@@ -1,0 +1,10 @@
+<h2 class="page-name">Men | Baselayers </h2>
+
+<% if @mens_baselayers.any? %>
+ <% @mens_baselayers.each do |baselayer| %>
+   <%= link_to baselayer.name, baselayer_path(baselayer) %>
+   £<%= baselayer.price %>
+ <% end %>
+<% else %>
+ <p>Currently no baselayers available</p>
+<% end %>

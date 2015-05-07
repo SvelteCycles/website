@@ -1,0 +1,110 @@
+<section class="row col-md-12">
+
+    <section class="title-wrap col-md-12-">
+      <h2 class="page-name"><a href="/men/">Men</a> | <a href="/men/jerseys">Jerseys</a> | <%= @jersey.name %></h2>
+    </section>
+
+    <section class="front-image-wrap col-md-4">
+      <img src="/assets/1.png" class="product-image image-zoom" data-zoom-image="/assets/1.png">
+    </section>
+
+    <section class="back-image-wrap col-md-4">
+      <img src="/assets/1.png" class="product-image image-zoom" data-zoom-image="/assets/1.png">
+    </section>
+
+    <section class="info-wrap col-md-4">
+      <section class="name-price-wrap">
+        <h1 class="product-name"><%= @jersey.name %></h1>
+        <h3 class="product-price">£<%= @jersey.price %></h3>
+      </section>
+
+      <section class="product-tabs-wrap">
+        <section class="product-tabs">
+          <ul class="list-inline product-submenu">
+            <li class="product-text details-submenu active"><a id="details" href="#tab1">Details</a></li>
+            <li class="product-text description-submenu"><a id="description" href="#tab2">Description</a></li>
+            <li class="product-text sizing-submenu"><a id="sizing" href="#tab3">Sizing</a></li>
+          </ul>
+          <section class="tab-content">
+            <section class="tab1 tab active">
+              <%= @jersey.details %>
+            </section>
+            <section class="tab2 tab">
+              <%= @jersey.description %>
+            </section>
+            <section class="tab3 tab">
+              <table class="table-position">
+                <tr>
+                  <th class="table-cell"></th>
+                  <th class="table-cell">S</th>
+                  <th class="table-cell">M</th>
+                  <th class="table-cell">L</th>
+                </tr>
+                <tr>
+                  <td class="table-body-column table-cell">Chest:</td>
+                  <td class="table-cell">84-91</td>
+                  <td class="table-cell">91-99</td>
+                  <td class="table-cell">99-109</td>
+                </tr>
+                <tr>
+                  <td class="table-body-column table-cell">Waist:</td>
+                  <td class="table-cell">78-81</td>
+                  <td class="table-cell">81-87</td>
+                  <td class="table-cell">87-91</td>
+                </tr>
+                <tr>
+                  <td class="table-body-column table-cell">Arm:</td>
+                  <td class="table-cell">60-62</td>
+                  <td class="table-cell">62-64</td>
+                  <td class="table-cell">64-66</td>
+                </tr>
+              </table>
+            </section>
+
+          </section>
+        </section>
+        <section class="info-box">
+          <section class="description-text">
+          </section>
+        </section>
+      </section>
+
+      <section class="dropdown-wrap">
+        <section name="size-wrap" class="size-wrap">
+          <select class="size-dropdown">
+            <option class="size-dropdown" value="">Select Size</option>
+            <option value="small">Small</option>
+            <option value="medium">Medium</option>
+            <option value="large">Large</option>
+          </select>
+        </section>
+
+        <section class="add-to-wrap">
+          <button class="add-to-bag">Add To Bag</button>
+        </section>
+      </section>
+
+    </section>
+
+    <section class="button-wrap col-md-12">
+      <section class="middle-button-wrap">
+        <a href="#product-carousel" id="scroll-down"><img class="down-arrow" src="/assets/downarrow-01.png"></a>
+      </section>
+    </section>
+
+    <div id="up-button-wrap col-md-12">
+      <section class="middle-button-wrap">
+        <a href="#"><img class="down-arrow" src="/assets/downarrow-01.png"></a>
+      </section>
+    </div>
+
+    <section id="product-carousel" class="single-item">
+      <div><img class="slideshow-image" src="https://s3-eu-west-1.amazonaws.com/svelte/home-background2.jpeg"></div>
+      <div><img class="slideshow-image" src="https://s3-eu-west-1.amazonaws.com/svelte/home-background3.jpg"></div>
+      <div><img class="slideshow-image" src="https://s3-eu-west-1.amazonaws.com/svelte/IMG_0043.JPG"></div>
+    </section>
+
+    <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.5.0/slick.min.js"></script>
+
+
+</section>

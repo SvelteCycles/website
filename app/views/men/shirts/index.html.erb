@@ -1,0 +1,10 @@
+<h2 class="page-name">Men | Shirts</h2>
+
+<% if @mens_shirts.any? %>
+<% @mens_shirts.each do |shirt| %>
+  <%= link_to shirt.name, shirt_path(shirt) %>
+  £<%= shirt.price %>
+<% end %>
+<% else %>
+<p> no shirts</p>
+<% end %>

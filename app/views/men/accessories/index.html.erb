@@ -1,0 +1,10 @@
+<h2 class="page-name">Men | Accessories </h2>
+
+<% if @mens_accessories.any? %>
+ <% @mens_accessories.each do |accessory| %>
+   <%= link_to accessory.name, accessory_path(accessory) %>
+   £<%= accessory.price %>
+ <% end %>
+<% else %>
+ <p>Currently no accessories available</p>
+<% end %>

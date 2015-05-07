@@ -1,0 +1,72 @@
+<div class="body-wrap">
+
+  <div class="product-body-wrap col-md-12-">
+
+  <div class="title-wrap col-md-12-">
+    <h2 class="page-name">Men | Baselayers | <%= @baselayer.name %></h2>
+  </div>
+
+  <div class="row">
+
+    <div class="front-image-wrap col-md-4">
+      <img src="/assets/1.png" style="height: 350px;" class="pull-right">
+    </div>
+
+    <div class="back-image-wrap col-md-4">
+      <img src="/assets/1.png" style="height: 350px;">
+    </div>
+
+    <div class="info-wrap col-md-4">
+
+
+    <h1 class="product-name"><%= @baselayer.name %></h1>
+    <h3 class="product-price">£<%= @baselayer.price %></h3><br>
+    <div class="product-menu">
+        <ul class="list-inline product-submenu">
+          <li class="product-submenu">Details</li>
+          <li class="product-submenu">Description</li>
+          <li class="product-submenu">Sizing</li>
+        </ul>
+    </div>
+    <div class="">
+
+      <!-- Data for Details, Description, Sizing goes here -->
+    <section class="description-text">
+    <%= @baselayer.details %>
+      <%= @baselayer.description %>
+      </section>
+
+  </div>
+
+    <div class="dropdown-wrap">
+      <select class="size-dropdown">
+        <div name="size" class="">
+          <option class="size-dropdown" value="">Select Size</option>
+          <option value="small">Small</option>
+          <option value="medium">Medium</option>
+          <option value="large">Large</option>
+        </select>
+      </div>
+        <button class="add-to-bag">Add To Bag</button>
+    </div>
+
+  </div>
+</div>
+
+
+</div>
+<div class="button-wrap">
+  <section class="middle-button-wrap">
+    <img class="down-arrow" src="/assets/downarrow-01.png">
+  </section>
+</div>
+
+<section class="hover-body-wrap">
+
+  <section class="hover-image">
+
+  </section>
+
+</section>
+
+</div>

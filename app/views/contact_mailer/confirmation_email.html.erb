@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+  </head>
+  <body>
+    <h1>Dear <%= @name %></h1>
+    <p>Thank you for visiting Svelte Cycles and making a purchase, we are trilled you found something you liked. We are busy putting your order together and will update you when it is ready for shipping. But in the meantime we warmly invite you to explore the rest of our website, and browse though the latest news on our social media accounts.<br>
+    Your order:<br>
+    Delivery Address:<br><br>
+    <%= @address %><br>
+    <%= @zip %><br>
+    <%= @city %><br>
+    <%= @country %><br><br>
+    Order:<br><br>
+    <% @order_items.each do |item| %>
+      <%= item.inventory.product.name %> X <%= item.quantity %><br>
+    <% end %><br><br>
+    Total:<br><br>
+    <%= @order.total %><br><br>
+    
+    </p>
+    Please be assured we regard our customers’ privacy as sacrosanct, and use you contact  information only to correspond directly with you. By way of future communication from Svelte, you will receive a monthly newsletter detailing our discoveries and developments. From time to time, we may also write to you about the release of a new product or send an invitation to an event we are hosting in London.
+    I look forward to welcoming you again when you choose to enhance or replenish your wardrobe. Should you require further information, you can find our contact forms under the contact page on our website www.svelte-cycles.com and we will aim to get back to you as soon as possible.<br><br>
+    ‘Dreams have as much influence as actions.’ Stéphane Mallarm<br>
+    Best regards<br><br>
+
+    Svelte cycles<br><br>
+
+    London, SW4 6LT, United Kingdom
+    Phone +44 7815 707771
+    follow us
+    www.svelte-cycles.com
+  </body>
+</html>
