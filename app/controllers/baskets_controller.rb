@@ -9,7 +9,6 @@ class BasketsController < ApplicationController
       current_order.update(total: @total)
       @amount = current_order.total * 100
     end
-
   end
 
 end

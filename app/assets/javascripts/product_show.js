@@ -61,6 +61,8 @@ $(document).ready(function() {
   });
 
   $('.image-zoom').elevateZoom({
+    zoomType: "inner",
+    lensShape: "round",
   });
 
 });

@@ -6,7 +6,7 @@
   <% @mens_inventory.each do |product| %>
     <section class="col-md-4">
       <a href="/men/<%= product.product.category.category %>/<%= product.id %>">
-      <img class="gender-product-image" src="<%= product.product_images[0].photo.url %>">
+      <img class="gender-product-image" src="<%= product.product_images.first.photo.url %>">
       </a>
       <h4 class="gender-product-name"><%= product.product.name.upcase %></h4>
       <h6 class="gender-product-price">£<%= product.product.price %></h4>

@@ -92,6 +92,12 @@
   text-align: center;
 }
 
+.product-image {
+  height: 350px;
+  margin: 25px auto 0 auto;
+  display: block;
+}
+
 // INFORMATION SECTION
 
 .info-wrap {
@@ -100,6 +106,26 @@
   padding: 3rem;
 }
 
+.name-price-wrap {
+  // background-color: red;
+  height: 75px;
+}
+
+
+
+.product-tabs-wrap {
+  font-family: "futura-pt", sans-serif;
+  font-size: 18px;
+  text-transform: uppercase;
+  // background-color: blue;
+  width: 100%;
+  height: 200px;
+}
+
+.product-tabs {
+  // background-color: grey;
+  margin: 0 0 0 0 ;
+}
 
 ul.list-inline.product-submenu {
   width: 100%;
@@ -156,6 +182,12 @@ a:active {
 
 .info-box {
   display: block;
+}
+
+.dropdown-wrap {
+  height: 75px;
+  display: block;
+  width: 100%;
 }
 
 .size-wrap {
@@ -240,6 +272,10 @@ a:active {
   display: block;
 }
 
+.tab-content {
+  text-align: center;
+}
+
 // TEXT
 
 .page-name {
@@ -264,6 +300,28 @@ a:active {
   border-right: 1.5px solid black;
 }
 
+.product-name {
+  font-family: "futura-pt", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+  font-size: 32px;
+}
+
+.product-price {
+  font-family: "futura-pt", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+}
+
+.description-text {
+  font-size: 18px;
+  font-family: "futura-pt", sans-serif;
+  text-align: center;
+  // height: 300px;
+}
+
 // TABLE
 
 .table-position {
@@ -285,6 +343,25 @@ a:active {
 .table-body-column {
   // font-weight: bold;
   height: 10px;
+  font-weight: bold;
+}
+
+
+// BUTTON
+
+.add-to-bag {
+  background-color: black;
+  color: white;
+  text-transform: uppercase;
+  font-family: "futura-pt", sans-serif;
+  border: 0;
+  width: 130px;
+  height: 36px;
+  font-size: 18px;
+  border-radius: 0.5rem;
+  position: relative;
+  display: block;
+  margin: 0 auto;
 }
 
 
@@ -314,6 +391,5 @@ a:active {
 .up-button-wrap {
   margin: 10rem 0 0 0;
 }
-
 
 // HOVER INFO SECTION

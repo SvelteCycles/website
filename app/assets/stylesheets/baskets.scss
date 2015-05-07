@@ -93,6 +93,13 @@ body {
   margin-bottom: 25px;
 }
 
+.main-basket-text {
+  font-family: "futura-pt", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 18px;
+}
+
 .main-basket-row {
   height: 100px;
 }
@@ -111,7 +118,6 @@ body {
 
 .basket-item-wrap {
   border-bottom: 1px solid #F2F4F6;
-
 }
 
 .basket-product-name {
@@ -120,6 +126,13 @@ body {
   font-size: 14px;
   -webkit-font-smoothing: antialiased;
   font-weight: normal;
+  // text-align: left;
+}
+
+.basket-product-name {
+  // text-align: left;
+  font-family: "futura-pt", sans-serif;
+  font-weight: bold;
 }
 
 .basket-currency-total {
@@ -138,6 +151,13 @@ body {
   font-size: 12px;
   -webkit-font-smoothing: antialiased;
   font-family: "futura-pt", sans-serif;
+  // text-align: left;
+  font-size: 12px;
+}
+
+.basket-options-text {
+  // text-align: left;
+  font-size: 12px;
 }
 
 .basket-option-title {
