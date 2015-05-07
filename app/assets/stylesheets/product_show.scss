@@ -1,0 +1,285 @@
+// PAGE WRAPS
+
+.product-body-wrap {
+  width: 100%;
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+.front-image-wrap {
+  // background-color: red;
+  height: 400px;
+}
+
+.back-image-wrap {
+  // background-color: salmon;
+  height: 400px;
+}
+
+.product-image {
+  height: 350px;
+  margin: 25px auto 0 auto;
+  display: block;
+
+}
+
+// INFORMATION SECTION
+
+.info-wrap {
+  // background-color: green;
+  height: 400px;
+  padding: 25px 25px 25px 25px;
+}
+
+.name-price-wrap {
+  // background-color: red;
+  height: 75px;
+}
+
+
+
+.product-tabs-wrap {
+  font-family: "futura-pt", sans-serif;
+  font-size: 18px;
+  text-transform: uppercase;
+  // background-color: blue;
+  width: 100%;
+  height: 200px;
+}
+
+.product-tabs {
+  // background-color: grey;
+  margin: 0 0 0 0 ;
+}
+
+ul.list-inline.product-submenu {
+  width: 100%;
+}
+
+.product-submenu {
+  list-style-type: none;
+  height: 30px;
+  text-align: center;
+}
+
+.product-submenu:after {
+  display: block;
+  clear: both;
+  content: '';
+}
+
+a:link {
+  color: black;
+  text-decoration: none;
+}
+
+a:visited {
+  color: black;
+  text-decoration: none;
+}
+
+a:hover {
+  color: black;
+  text-decoration: none;
+}
+
+a:active {
+  color: black;
+  text-decoration: none;
+}
+
+a:active {
+  color: black;
+  text-decoration: none;
+}
+
+.details-submenu {
+  border-bottom: 1.5px solid black;
+}
+
+.description-submenu {
+  text-decoration: none;
+}
+
+.sizing-submenu {
+  text-decoration: none;
+}
+
+.info-box {
+  display: block;
+}
+
+.dropdown-wrap {
+  height: 75px;
+  display: block;
+  width: 100%;
+}
+
+.size-wrap {
+  width: 49%;
+  display: inline-block;
+  margin: 0 auto 0 auto;
+}
+
+.size-dropdown {
+  background-color: black;
+  text-align: center;
+  width: 130px;
+  height: 36px;
+  color: white;
+  border: 0;
+  font-family: "futura-pt", sans-serif;
+  text-transform: uppercase;
+  border-radius: 0;
+  font-size: 18px;
+  display: block;
+  position: relative;
+  margin: 0 auto 0 auto;
+}
+
+.add-to-wrap {
+  width: 49%;
+  display: inline-block;
+}
+
+.button-wrap {
+  width: 100%;
+  // background-color: yellow;
+  height: 60px;
+}
+
+.down-arrow {
+  display: block;
+  margin: 7.5px auto 0 auto;
+  background-color: #8E8E87;
+  border-radius: 10rem;
+  height: 25px;
+  width: 25px;
+  z-index: 100;
+
+}
+
+.hover-body-wrap {
+  background-image: url('https://s3.amazonaws.com/sveltewebsite/home_background_1.JPG');
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 900px;
+  width: 100%;
+  margin-top: 4rem;
+  position: relative;
+}
+
+
+// TABS
+
+.tab {
+  display: none;
+}
+
+.tab.active {
+  display: block;
+}
+
+.tab-content {
+  text-align: center;
+}
+
+// TEXT
+
+.page-name {
+  font-family: "futura-pt",sans-serif;
+  text-transform: uppercase;
+  font-size: 24px;
+  padding: 0 0 0 2rem;
+}
+
+.product-name {
+  font-family: "futura-pt", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+  font-size: 32px;
+}
+
+.product-price {
+  font-family: "futura-pt", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+}
+
+.description-text {
+  font-size: 18px;
+  font-family: "futura-pt", sans-serif;
+  text-align: center;
+  // height: 300px;
+}
+
+// TABLE
+
+.table-position {
+  display: none;
+  margin: 0 auto 0 auto;
+}
+
+.tab3 {
+  display: block;
+  margin: auto;
+}
+
+.table-cell {
+  width: 100px;
+  text-align: center;
+}
+
+.table-body-column {
+  font-weight: bold;
+}
+
+
+// BUTTON
+
+.add-to-bag {
+  background-color: black;
+  color: white;
+  text-transform: uppercase;
+  font-family: "futura-pt", sans-serif;
+  border: 0;
+  width: 130px;
+  height: 36px;
+  font-size: 18px;
+  border-radius: 0.5rem;
+  position: relative;
+  display: block;
+  margin: 0 auto;
+}
+
+
+// CAROUSEL
+
+.single-item {
+  left: 0;
+}
+
+.slideshow-image {
+  height: 525px;
+  width: 100%;
+}
+
+#product-carousel {
+  margin-top: 2rem;
+}
+
+.slideshow-slide.slick-slide {
+  height: 80rem;
+}
+
+.slideshow-image {
+  height: 80rem;
+}
+
+
+// HOVER INFO SECTION

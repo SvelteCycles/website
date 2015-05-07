@@ -1,0 +1,19 @@
+<section class="col-md-12 basket-item-wrap">
+  <section class="col-md-2 main-basket-row">
+    <img class="basket-image" src="<%= inventory.product_images.first.photo.url %>">
+  </section>
+  <section class="col-md-4 main-basket-row">
+    <h4 class="main-basket-text basket-product-name"><%= inventory.product.name %></h4>
+    <h6 class="main-basket-text basket-remove-text"><%= link_to "Remove", order_item, { data: { confirm: "Are you sure you wish to delete the product '#{order_item.inventory.product.name.upcase}' from your cart?" }, method: :delete, remote: true, class: :remove } %></h6>
+  </section>
+  <section class="col-md-5 main-basket-row">
+    <h6 class="main-basket-text basket-options-text"><span class="basket-option-title">Colour:</span><b><%= inventory.colour.colour %></b></h6>
+    <h6 class="main-basket-text basket-options-text"><span class="basket-option-title">Size:</span><b><%= inventory.size.size %></b></h6>
+    <h6 class="main-basket-text basket-options-text"><span class="basket-option-title">Gender:</span><b><%= inventory.gender.sex %></b></h6>
+  </section>
+  <section class="col-md-1 main-basket-row">
+    <h4 class="main-basket-text basket-item-total"><%= number_to_currency(order_item.total_price, unit: "£") %></h4>
+  </section>
+  <%= form_for order_item, remote: true do |f| %>
+</section>
+  <% end %>

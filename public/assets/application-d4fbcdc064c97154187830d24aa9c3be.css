@@ -1,0 +1,1594 @@
+@charset "UTF-8";.new-product-form {
+  width: 50%;
+}
+
+.admin-button {
+  width: 200px;
+  height: 32px;
+  font-family: "futura-pt",sans-serif;
+  background-color: #F2F4F6;
+  border: 0;
+  display: block;
+  margin: auto;
+  text-transform: uppercase;
+}
+
+.admin-title {
+  font-family: "futura-pt",sans-serif;
+  font-size: 36px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.main-admin-text {
+  font-family: "futura-pt", sans-serif;
+  text-transform: uppercase;
+}
+
+.second-admin-text {
+  font-family: "futura-pt", sans-serif;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.admin-wrap {
+  width: 100%;
+  height: auto;
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+  border-bottom: 1.6px solid black;
+}
+
+.admin-image {
+  height: 50px;
+  width: 50px;
+}
+
+.main-admin-row {
+  height: 50px;
+  text-align: center;
+}
+
+.second-admin-row {
+  text-align: center;
+  height: auto;
+}
+/* line 9, /Users/fadie/Desktop/Freelance/svelt_mvp_2/svelt_mvp/app/assets/stylesheets/baskets.scss */
+body {
+  padding-bottom: 50px;
+}
+
+/* line 13, /Users/fadie/Desktop/Freelance/svelt_mvp_2/svelt_mvp/app/assets/stylesheets/baskets.scss */
+.orders-wrap {
+  padding: 5rem;
+}
+
+/* line 17, /Users/fadie/Desktop/Freelance/svelt_mvp_2/svelt_mvp/app/assets/stylesheets/baskets.scss */
+.basket-title {
+  font-family: "futura-pt", sans-serif;
+  text-align: center;
+  font-size: 24px;
+}
+
+/* line 25, /Users/fadie/Desktop/Freelance/svelt_mvp_2/svelt_mvp/app/assets/stylesheets/baskets.scss */
+.basket-receipt-table {
+  font-family: "futura-pt", sans-serif;
+}
+
+/* line 29, /Users/fadie/Desktop/Freelance/svelt_mvp_2/svelt_mvp/app/assets/stylesheets/baskets.scss */
+.basket-number-column {
+  width: 100%;
+}
+
+/* line 33, /Users/fadie/Desktop/Freelance/svelt_mvp_2/svelt_mvp/app/assets/stylesheets/baskets.scss */
+.basket-currency-column {
+  padding: 0 1rem 0 1rem;
+}
+
+/* line 37, /Users/fadie/Desktop/Freelance/svelt_mvp_2/svelt_mvp/app/assets/stylesheets/baskets.scss */
+.basket-remove-column {
+  padding: 0 1rem 0 1rem;
+  font-weight: normal;
+  text-transform: uppercase;
+  font-size: 10px;
+}
+
+/* line 46, /Users/fadie/Desktop/Freelance/svelt_mvp_2/svelt_mvp/app/assets/stylesheets/baskets.scss */
+.subtotal-table {
+  border-top: 2.75px solid black;
+  font-family: "futura-pt", sans-serif;
+}
+
+/* line 51, /Users/fadie/Desktop/Freelance/svelt_mvp_2/svelt_mvp/app/assets/stylesheets/baskets.scss */
+.subtotal-column {
+  width: 100%;
+}
+
+/* line 55, /Users/fadie/Desktop/Freelance/svelt_mvp_2/svelt_mvp/app/assets/stylesheets/baskets.scss */
+.total-column {
+  padding: 0 1rem 0 1rem;
+}
+
+/* line 62, /Users/fadie/Desktop/Freelance/svelt_mvp_2/svelt_mvp/app/assets/stylesheets/baskets.scss */
+.payment-wrap {
+  padding: 5rem;
+}
+
+/* line 66, /Users/fadie/Desktop/Freelance/svelt_mvp_2/svelt_mvp/app/assets/stylesheets/baskets.scss */
+.basket-payment-title {
+  font-family: "futura-pt", sans-serif;
+  text-align: center;
+  font-size: 24px;
+}
+
+/* line 72, /Users/fadie/Desktop/Freelance/svelt_mvp_2/svelt_mvp/app/assets/stylesheets/baskets.scss */
+.payment-fields-wrap {
+  padding: 0 1rem 0 1rem;
+}
+
+/* line 76, /Users/fadie/Desktop/Freelance/svelt_mvp_2/svelt_mvp/app/assets/stylesheets/baskets.scss */
+.payment-table {
+  font-family: "futura-pt", sans-serif;
+  font-weight: normal;
+  display: block;
+}
+
+/* line 82, /Users/fadie/Desktop/Freelance/svelt_mvp_2/svelt_mvp/app/assets/stylesheets/baskets.scss */
+.basket-image {
+  height: 100px;
+  width: 100px;
+  display: block;
+  margin: auto;
+}
+
+/* line 89, /Users/fadie/Desktop/Freelance/svelt_mvp_2/svelt_mvp/app/assets/stylesheets/baskets.scss */
+.main-basket-row {
+  height: 100px;
+  text-align: center;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+/* line 96, /Users/fadie/Desktop/Freelance/svelt_mvp_2/svelt_mvp/app/assets/stylesheets/baskets.scss */
+.main-basket-text {
+  font-family: "futura-pt", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 18px;
+}
+
+/* line 103, /Users/fadie/Desktop/Freelance/svelt_mvp_2/svelt_mvp/app/assets/stylesheets/baskets.scss */
+.main-basket-row {
+  height: 100px;
+}
+
+/* line 107, /Users/fadie/Desktop/Freelance/svelt_mvp_2/svelt_mvp/app/assets/stylesheets/baskets.scss */
+.second-basket-row {
+  height: auto;
+  text-align: center;
+  font-family: "futura-pt", sans-serif;
+  text-transform: uppercase;
+}
+
+/* line 114, /Users/fadie/Desktop/Freelance/svelt_mvp_2/svelt_mvp/app/assets/stylesheets/baskets.scss */
+.payment-button-wrap {
+  display: block;
+  margin: auto;
+}
+
+/* line 119, /Users/fadie/Desktop/Freelance/svelt_mvp_2/svelt_mvp/app/assets/stylesheets/baskets.scss */
+.basket-item-wrap {
+  border-bottom: 1px solid #F2F4F6;
+}
+
+/* line 128, /Users/fadie/Desktop/Freelance/svelt_mvp_2/svelt_mvp/app/assets/stylesheets/baskets.scss */
+.basket-product-name {
+  font-family: "futura-pt", sans-serif;
+  font-weight: bold;
+}
+
+/* line 134, /Users/fadie/Desktop/Freelance/svelt_mvp_2/svelt_mvp/app/assets/stylesheets/baskets.scss */
+.basket-currency-total {
+  text-align: center;
+  font-family: "futura-pt", sans-serif;
+}
+
+/* line 139, /Users/fadie/Desktop/Freelance/svelt_mvp_2/svelt_mvp/app/assets/stylesheets/baskets.scss */
+.basket-remove-text {
+  font-size: 12px;
+}
+
+/* line 144, /Users/fadie/Desktop/Freelance/svelt_mvp_2/svelt_mvp/app/assets/stylesheets/baskets.scss */
+.basket-options-text {
+  font-size: 12px;
+}
+
+/* line 149, /Users/fadie/Desktop/Freelance/svelt_mvp_2/svelt_mvp/app/assets/stylesheets/baskets.scss */
+.basket-option-title {
+  width: 100px;
+}
+
+/* line 153, /Users/fadie/Desktop/Freelance/svelt_mvp_2/svelt_mvp/app/assets/stylesheets/baskets.scss */
+.basket-total-text {
+  font-family: "futura-pt", sans-serif;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+/* line 159, /Users/fadie/Desktop/Freelance/svelt_mvp_2/svelt_mvp/app/assets/stylesheets/baskets.scss */
+.basket-item-total {
+  text-align: center;
+}
+/* line 5, /Users/fadie/Desktop/big_business/svelt_mvp_2/svelt_mvp/app/assets/stylesheets/brand.scss */
+.brand-details {
+  font-family: "futura-pt", sans-serif;
+  width: 34em;
+  height: 24em;
+  left: 50%;
+  margin: 7em 0 0 -17em;
+  position: absolute;
+  padding: 0 5em;
+}
+
+/* line 15, /Users/fadie/Desktop/big_business/svelt_mvp_2/svelt_mvp/app/assets/stylesheets/brand.scss */
+.brand-details h2 {
+  font-size: 1.5em;
+  line-height: 3em;
+  border-bottom: 1px solid black;
+  text-align: center;
+  width: 100%;
+  text-transform: uppercase;
+  margin: 0;
+  text-align: center;
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+
+/* line 28, /Users/fadie/Desktop/big_business/svelt_mvp_2/svelt_mvp/app/assets/stylesheets/brand.scss */
+.brand-description p {
+  font-size: 1em;
+  text-align: justify;
+  letter-spacing: 1px;
+  padding-top: 17px;
+  width: 100%;
+  float: left;
+}
+/* line 5, /Users/fadie/Desktop/Freelance/svelt_mvp_2/svelt_mvp/app/assets/stylesheets/confirmation.scss */
+.confirmation-title {
+  font-family: "futura-pt",sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/* line 11, /Users/fadie/Desktop/Freelance/svelt_mvp_2/svelt_mvp/app/assets/stylesheets/confirmation.scss */
+.confirmation-text {
+  font-family: "futura-pt", sans-serif;
+  text-align: center;
+}
+/*// Place all the styles related to the Contact controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/*/
+
+/*===================CONTACT-FORM===================*/
+
+.contact-details {
+  font-family: "futura-pt",sans-serif;
+  width: 34em;
+  height: 24em;
+  left: 50%;
+  margin: 7em 0 0 -17em;
+  position: absolute;
+  padding: 0 5em;
+}
+
+.contact-details h2 {
+  font-size: 1.5em;
+  line-height: 3em;
+  border-bottom: 1px solid black;
+  text-align: center;
+  width: 100%;
+  text-transform: uppercase;
+  margin: 0;
+  letter-spacing: 1px;
+}
+
+.contact-details p {
+  font-size: 0.8em;
+  text-align: center;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border-bottom: 1px solid #b5b7b9;
+  margin: 17px 0;
+  padding-bottom: 17px;
+  float: left;
+  width: 100%;
+}
+
+.contact-form {
+  border-bottom: 1px solid black;
+  padding-bottom: 17px;
+}
+
+.contact-form label {
+  font-size: 0.8em;
+  text-align: left;
+  float: left;
+  text-transform: uppercase;
+  margin-top: 0;
+  letter-spacing: 1px;
+}
+
+.contact-form input[type="text"], input[type="email"], textarea {
+    border: 1px solid #CCC;
+    color: #888;
+    height: 20px;
+    line-height:15px;
+    margin-bottom: 16px;
+    margin-top: 2px;
+    outline: 0 none;
+    padding: 5px 0px 5px 5px;
+    width: 75%;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+
+.contact-form textarea {
+  width: 75%;
+  height: 6em;
+  margin-left: 20px;
+}
+
+.contact-form input[type="text"], input[type="email"] {
+  margin-left: 40px;
+}
+
+.contact-form input[type="submit"] {
+    background: #FFF;
+    border: 1px solid #CCC;
+    padding: 10px 25px 10px 25px;
+    color: #333;
+    border-radius: 4px;
+    margin-left: 131px;
+    text-align: center;
+    line-height: 0.4em;
+    font-family: "futura-pt",sans-serif;
+    font-size: 0.8em;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.contact-form input[type="submit"]:hover {
+    color: #333;
+    background-color: #EBEBEB;
+    border-color: #ADADAD;
+}
+/* line 5, /Users/fadie/Desktop/Freelance/svelt_mvp_2/svelt_mvp/app/assets/stylesheets/events.scss */
+body {
+  padding-bottom: 100px;
+}
+
+/* line 9, /Users/fadie/Desktop/Freelance/svelt_mvp_2/svelt_mvp/app/assets/stylesheets/events.scss */
+.event-wrap {
+  margin: 20px 0 0 0;
+}
+
+/* line 13, /Users/fadie/Desktop/Freelance/svelt_mvp_2/svelt_mvp/app/assets/stylesheets/events.scss */
+.event-image {
+  width: 100%;
+}
+
+/* line 17, /Users/fadie/Desktop/Freelance/svelt_mvp_2/svelt_mvp/app/assets/stylesheets/events.scss */
+.event-day-month {
+  color: #8D8E8D;
+  text-align: center;
+  font-size: 14px;
+  font-family: "futura-pt", sans-serif;
+  margin: 20px 0 0 0;
+  padding: 0;
+}
+
+/* line 26, /Users/fadie/Desktop/Freelance/svelt_mvp_2/svelt_mvp/app/assets/stylesheets/events.scss */
+.event-date {
+  color: #8D8E8D;
+  font-size: 98px;
+  text-align: center;
+  font-family: "futura-pt", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 35, /Users/fadie/Desktop/Freelance/svelt_mvp_2/svelt_mvp/app/assets/stylesheets/events.scss */
+.event-date-th {
+  font-size: 48px;
+  text-transform: uppercase;
+  font-family: "futura-pt", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 43, /Users/fadie/Desktop/Freelance/svelt_mvp_2/svelt_mvp/app/assets/stylesheets/events.scss */
+.event-title {
+  font-family: "futura-pt", sans-serif;
+  text-align: left;
+  margin: 20px 0 0 0;
+}
+
+/* line 49, /Users/fadie/Desktop/Freelance/svelt_mvp_2/svelt_mvp/app/assets/stylesheets/events.scss */
+.event-description {
+  font-family: "futura-pt", sans-serif;
+  font-size: 16px;
+  text-align: left;
+  margin: 20px 0 0 0;
+  line-spacing: 10px;
+}
+
+/* line 57, /Users/fadie/Desktop/Freelance/svelt_mvp_2/svelt_mvp/app/assets/stylesheets/events.scss */
+.event-location {
+  font-family: "futura-pt", sans-serif;
+  font-size: 16px;
+  text-align: left;
+  margin: 20px 0 0 0;
+  font-weight: bold;
+}
+/* line 1, /Users/fadie/Desktop/big_business/svelt_mvp_2/svelt_mvp/app/assets/stylesheets/gender_index.scss */
+.each-product-wrap {
+  background-color: salmon;
+  height: 250px;
+}
+
+/* line 6, /Users/fadie/Desktop/big_business/svelt_mvp_2/svelt_mvp/app/assets/stylesheets/gender_index.scss */
+.each-product {
+  height: 250px;
+}
+
+/* line 13, /Users/fadie/Desktop/big_business/svelt_mvp_2/svelt_mvp/app/assets/stylesheets/gender_index.scss */
+.single-product-image {
+  height: 250px;
+  display: block;
+  margin: auto;
+  z-index: 1;
+}
+
+/* line 20, /Users/fadie/Desktop/big_business/svelt_mvp_2/svelt_mvp/app/assets/stylesheets/gender_index.scss */
+.single-product-overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 99;
+}
+/* line 5, /Users/fadie/Desktop/big_business/svelt_mvp_2/svelt_mvp/app/assets/stylesheets/jerseys.scss */
+.category-product-wrap {
+  background-color: salmon;
+}
+
+/* line 9, /Users/fadie/Desktop/big_business/svelt_mvp_2/svelt_mvp/app/assets/stylesheets/jerseys.scss */
+.product-category-image {
+  height: 350px;
+  display: block;
+  margin: 0 auto 0 auto;
+}
+
+/* line 15, /Users/fadie/Desktop/big_business/svelt_mvp_2/svelt_mvp/app/assets/stylesheets/jerseys.scss */
+.product-name-link {
+  color: white;
+  text-align: center;
+  display: none;
+  text-transform: capitalize;
+}
+/* line 5, /Users/fadie/Desktop/big_business/svelt_mvp_2/svelt_mvp/app/assets/stylesheets/men.scss */
+.bodywrap {
+  padding: 0 2rem 0 2rem;
+}
+
+/* line 9, /Users/fadie/Desktop/big_business/svelt_mvp_2/svelt_mvp/app/assets/stylesheets/men.scss */
+.product-heading {
+  font-size: 24px;
+}
+
+/* line 13, /Users/fadie/Desktop/big_business/svelt_mvp_2/svelt_mvp/app/assets/stylesheets/men.scss */
+.product-wrap {
+  display: inline-block;
+}
+/* line 1, /Users/fadie/Desktop/Freelance/svelt_mvp_2/svelt_mvp/app/assets/stylesheets/product_index.scss */
+.page-name {
+  margin: 0;
+  padding: 0 0 0 2rem;
+  height: 60px;
+}
+
+/* line 7, /Users/fadie/Desktop/Freelance/svelt_mvp_2/svelt_mvp/app/assets/stylesheets/product_index.scss */
+.slider.multiple-items {
+  margin: 0 10rem;
+}
+
+/* line 11, /Users/fadie/Desktop/Freelance/svelt_mvp_2/svelt_mvp/app/assets/stylesheets/product_index.scss */
+img.carousel-image {
+  height: 40rem;
+  margin: auto auto;
+}
+
+/* line 16, /Users/fadie/Desktop/Freelance/svelt_mvp_2/svelt_mvp/app/assets/stylesheets/product_index.scss */
+.item-text {
+  font-family: "futura-pt",sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  letter-spacing: 0.1rem;
+  text-align: center;
+}
+
+/* line 24, /Users/fadie/Desktop/Freelance/svelt_mvp_2/svelt_mvp/app/assets/stylesheets/product_index.scss */
+.slick-prev:before, .slick-next:before {
+  color: gray !important;
+}
+/* line 3, /Users/fadie/Desktop/Freelance/svelt_mvp_2/svelt_mvp/app/assets/stylesheets/product_show.scss */
+.product-body-wrap {
+  width: 100%;
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 10, /Users/fadie/Desktop/Freelance/svelt_mvp_2/svelt_mvp/app/assets/stylesheets/product_show.scss */
+.front-image-wrap {
+  height: 400px;
+}
+
+/* line 15, /Users/fadie/Desktop/Freelance/svelt_mvp_2/svelt_mvp/app/assets/stylesheets/product_show.scss */
+.back-image-wrap {
+  height: 400px;
+}
+
+/* line 20, /Users/fadie/Desktop/Freelance/svelt_mvp_2/svelt_mvp/app/assets/stylesheets/product_show.scss */
+.product-image {
+  height: 350px;
+  margin: 25px auto 0 auto;
+  display: block;
+}
+
+/* line 29, /Users/fadie/Desktop/Freelance/svelt_mvp_2/svelt_mvp/app/assets/stylesheets/product_show.scss */
+.info-wrap {
+  height: 400px;
+  padding: 25px 25px 25px 25px;
+}
+
+/* line 35, /Users/fadie/Desktop/Freelance/svelt_mvp_2/svelt_mvp/app/assets/stylesheets/product_show.scss */
+.name-price-wrap {
+  height: 75px;
+}
+
+/* line 42, /Users/fadie/Desktop/Freelance/svelt_mvp_2/svelt_mvp/app/assets/stylesheets/product_show.scss */
+.product-tabs-wrap {
+  font-family: "futura-pt", sans-serif;
+  font-size: 18px;
+  text-transform: uppercase;
+  width: 100%;
+  height: 200px;
+}
+
+/* line 51, /Users/fadie/Desktop/Freelance/svelt_mvp_2/svelt_mvp/app/assets/stylesheets/product_show.scss */
+.product-tabs {
+  margin: 0 0 0 0;
+}
+
+/* line 56, /Users/fadie/Desktop/Freelance/svelt_mvp_2/svelt_mvp/app/assets/stylesheets/product_show.scss */
+ul.list-inline.product-submenu {
+  width: 100%;
+}
+
+/* line 60, /Users/fadie/Desktop/Freelance/svelt_mvp_2/svelt_mvp/app/assets/stylesheets/product_show.scss */
+.product-submenu {
+  list-style-type: none;
+  height: 30px;
+  text-align: center;
+}
+
+/* line 66, /Users/fadie/Desktop/Freelance/svelt_mvp_2/svelt_mvp/app/assets/stylesheets/product_show.scss */
+.product-submenu:after {
+  display: block;
+  clear: both;
+  content: '';
+}
+
+/* line 72, /Users/fadie/Desktop/Freelance/svelt_mvp_2/svelt_mvp/app/assets/stylesheets/product_show.scss */
+a:link {
+  color: black;
+  text-decoration: none;
+}
+
+/* line 77, /Users/fadie/Desktop/Freelance/svelt_mvp_2/svelt_mvp/app/assets/stylesheets/product_show.scss */
+a:visited {
+  color: black;
+  text-decoration: none;
+}
+
+/* line 82, /Users/fadie/Desktop/Freelance/svelt_mvp_2/svelt_mvp/app/assets/stylesheets/product_show.scss */
+a:hover {
+  color: black;
+  text-decoration: none;
+}
+
+/* line 87, /Users/fadie/Desktop/Freelance/svelt_mvp_2/svelt_mvp/app/assets/stylesheets/product_show.scss */
+a:active {
+  color: black;
+  text-decoration: none;
+}
+
+/* line 92, /Users/fadie/Desktop/Freelance/svelt_mvp_2/svelt_mvp/app/assets/stylesheets/product_show.scss */
+a:active {
+  color: black;
+  text-decoration: none;
+}
+
+/* line 97, /Users/fadie/Desktop/Freelance/svelt_mvp_2/svelt_mvp/app/assets/stylesheets/product_show.scss */
+.details-submenu {
+  border-bottom: 1.5px solid black;
+}
+
+/* line 101, /Users/fadie/Desktop/Freelance/svelt_mvp_2/svelt_mvp/app/assets/stylesheets/product_show.scss */
+.description-submenu {
+  text-decoration: none;
+}
+
+/* line 105, /Users/fadie/Desktop/Freelance/svelt_mvp_2/svelt_mvp/app/assets/stylesheets/product_show.scss */
+.sizing-submenu {
+  text-decoration: none;
+}
+
+/* line 109, /Users/fadie/Desktop/Freelance/svelt_mvp_2/svelt_mvp/app/assets/stylesheets/product_show.scss */
+.info-box {
+  display: block;
+}
+
+/* line 113, /Users/fadie/Desktop/Freelance/svelt_mvp_2/svelt_mvp/app/assets/stylesheets/product_show.scss */
+.dropdown-wrap {
+  height: 75px;
+  display: block;
+  width: 100%;
+}
+
+/* line 119, /Users/fadie/Desktop/Freelance/svelt_mvp_2/svelt_mvp/app/assets/stylesheets/product_show.scss */
+.size-wrap {
+  width: 49%;
+  display: inline-block;
+  margin: 0 auto 0 auto;
+}
+
+/* line 125, /Users/fadie/Desktop/Freelance/svelt_mvp_2/svelt_mvp/app/assets/stylesheets/product_show.scss */
+.size-dropdown {
+  background-color: black;
+  text-align: center;
+  width: 130px;
+  height: 36px;
+  color: white;
+  border: 0;
+  font-family: "futura-pt", sans-serif;
+  text-transform: uppercase;
+  border-radius: 0;
+  font-size: 18px;
+  display: block;
+  position: relative;
+  margin: 0 auto 0 auto;
+}
+
+/* line 141, /Users/fadie/Desktop/Freelance/svelt_mvp_2/svelt_mvp/app/assets/stylesheets/product_show.scss */
+.add-to-wrap {
+  width: 49%;
+  display: inline-block;
+}
+
+/* line 146, /Users/fadie/Desktop/Freelance/svelt_mvp_2/svelt_mvp/app/assets/stylesheets/product_show.scss */
+.button-wrap {
+  width: 100%;
+  height: 60px;
+}
+
+/* line 152, /Users/fadie/Desktop/Freelance/svelt_mvp_2/svelt_mvp/app/assets/stylesheets/product_show.scss */
+.down-arrow {
+  display: block;
+  margin: 7.5px auto 0 auto;
+  background-color: #8E8E87;
+  border-radius: 10rem;
+  height: 25px;
+  width: 25px;
+  z-index: 100;
+}
+
+/* line 163, /Users/fadie/Desktop/Freelance/svelt_mvp_2/svelt_mvp/app/assets/stylesheets/product_show.scss */
+.hover-body-wrap {
+  background-image: url("https://s3-eu-west-1.amazonaws.com/svelte/home-background4.JPG");
+  background-size: cover;
+  height: 900px;
+  width: 100%;
+  margin-top: 4rem;
+  position: relative;
+}
+
+/* line 178, /Users/fadie/Desktop/Freelance/svelt_mvp_2/svelt_mvp/app/assets/stylesheets/product_show.scss */
+.tab {
+  display: none;
+}
+
+/* line 182, /Users/fadie/Desktop/Freelance/svelt_mvp_2/svelt_mvp/app/assets/stylesheets/product_show.scss */
+.tab.active {
+  display: block;
+}
+
+/* line 186, /Users/fadie/Desktop/Freelance/svelt_mvp_2/svelt_mvp/app/assets/stylesheets/product_show.scss */
+.tab-content {
+  text-align: center;
+}
+
+/* line 192, /Users/fadie/Desktop/Freelance/svelt_mvp_2/svelt_mvp/app/assets/stylesheets/product_show.scss */
+.page-name {
+  font-family: "futura-pt",sans-serif;
+  text-transform: uppercase;
+  font-size: 24px;
+  padding: 0 0 0 2rem;
+}
+
+/* line 199, /Users/fadie/Desktop/Freelance/svelt_mvp_2/svelt_mvp/app/assets/stylesheets/product_show.scss */
+.product-name {
+  font-family: "futura-pt", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+  font-size: 32px;
+}
+
+/* line 207, /Users/fadie/Desktop/Freelance/svelt_mvp_2/svelt_mvp/app/assets/stylesheets/product_show.scss */
+.product-price {
+  font-family: "futura-pt", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+}
+
+/* line 214, /Users/fadie/Desktop/Freelance/svelt_mvp_2/svelt_mvp/app/assets/stylesheets/product_show.scss */
+.description-text {
+  font-size: 18px;
+  font-family: "futura-pt", sans-serif;
+  text-align: center;
+}
+
+/* line 223, /Users/fadie/Desktop/Freelance/svelt_mvp_2/svelt_mvp/app/assets/stylesheets/product_show.scss */
+.table-position {
+  display: none;
+  margin: 0 auto 0 auto;
+}
+
+/* line 228, /Users/fadie/Desktop/Freelance/svelt_mvp_2/svelt_mvp/app/assets/stylesheets/product_show.scss */
+.tab3 {
+  display: block;
+  margin: auto;
+}
+
+/* line 233, /Users/fadie/Desktop/Freelance/svelt_mvp_2/svelt_mvp/app/assets/stylesheets/product_show.scss */
+.table-cell {
+  width: 100px;
+  text-align: center;
+}
+
+/* line 238, /Users/fadie/Desktop/Freelance/svelt_mvp_2/svelt_mvp/app/assets/stylesheets/product_show.scss */
+.table-body-column {
+  font-weight: bold;
+}
+
+/* line 245, /Users/fadie/Desktop/Freelance/svelt_mvp_2/svelt_mvp/app/assets/stylesheets/product_show.scss */
+.add-to-bag {
+  background-color: black;
+  color: white;
+  text-transform: uppercase;
+  font-family: "futura-pt", sans-serif;
+  border: 0;
+  width: 130px;
+  height: 36px;
+  font-size: 18px;
+  border-radius: 0.5rem;
+  position: relative;
+  display: block;
+  margin: 0 auto;
+}
+
+/* line 263, /Users/fadie/Desktop/Freelance/svelt_mvp_2/svelt_mvp/app/assets/stylesheets/product_show.scss */
+.single-item {
+  left: 0;
+}
+
+/* line 267, /Users/fadie/Desktop/Freelance/svelt_mvp_2/svelt_mvp/app/assets/stylesheets/product_show.scss */
+.slideshow-image {
+  height: 525px;
+  width: 100%;
+}
+
+/* line 272, /Users/fadie/Desktop/Freelance/svelt_mvp_2/svelt_mvp/app/assets/stylesheets/product_show.scss */
+#product-carousel {
+  margin-top: 2rem;
+}
+
+/* line 276, /Users/fadie/Desktop/Freelance/svelt_mvp_2/svelt_mvp/app/assets/stylesheets/product_show.scss */
+.slideshow-slide.slick-slide {
+  height: 80rem;
+}
+
+/* line 280, /Users/fadie/Desktop/Freelance/svelt_mvp_2/svelt_mvp/app/assets/stylesheets/product_show.scss */
+.slideshow-image {
+  height: 80rem;
+}
+
+/* Slider */
+/* line 40, /Users/fadie/Desktop/Freelance/svelt_mvp_2/svelt_mvp/app/assets/stylesheets/slick-theme.scss */
+.slick-loading .slick-list {
+  background: #fff url(/assets/ajax-loader-590b341596915e6384d9d4d05431943f.gif) center center no-repeat;
+}
+
+/* Icons */
+@font-face {
+  font-family: "slick";
+  src: url(/assets/slick-fbf08603f8439589c7d98da57c89f73d.eot);
+  src: url(/assets/slick-fbf08603f8439589c7d98da57c89f73d.eot?#iefix) format("embedded-opentype"), url(/assets/slick-80ff7f4f9e1fea4b71f5b9c3e7f1d5db.woff) format("woff"), url(/assets/slick-aa51ce87f998ecd432194fc029892030.ttf) format("truetype"), url(/assets/slick-9b18eee35febdd2d821d5e128ab347a2.svg#slick) format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+/* Arrows */
+/* line 58, /Users/fadie/Desktop/Freelance/svelt_mvp_2/svelt_mvp/app/assets/stylesheets/slick-theme.scss */
+.slick-prev,
+.slick-next {
+  position: absolute;
+  display: block;
+  height: 80px;
+  width: 80px;
+  line-height: 0px;
+  font-size: 0px;
+  cursor: pointer;
+  background: transparent;
+  color: transparent;
+  top: 50%;
+  margin-top: -10px;
+  padding: 0;
+  border: none;
+  outline: none;
+}
+/* line 74, /Users/fadie/Desktop/Freelance/svelt_mvp_2/svelt_mvp/app/assets/stylesheets/slick-theme.scss */
+.slick-prev:hover, .slick-prev:focus,
+.slick-next:hover,
+.slick-next:focus {
+  outline: none;
+  background: transparent;
+  color: transparent;
+}
+/* line 78, /Users/fadie/Desktop/Freelance/svelt_mvp_2/svelt_mvp/app/assets/stylesheets/slick-theme.scss */
+.slick-prev:hover:before, .slick-prev:focus:before,
+.slick-next:hover:before,
+.slick-next:focus:before {
+  opacity: 1;
+}
+/* line 82, /Users/fadie/Desktop/Freelance/svelt_mvp_2/svelt_mvp/app/assets/stylesheets/slick-theme.scss */
+.slick-prev.slick-disabled:before,
+.slick-next.slick-disabled:before {
+  opacity: 0.25;
+}
+
+/* line 87, /Users/fadie/Desktop/Freelance/svelt_mvp_2/svelt_mvp/app/assets/stylesheets/slick-theme.scss */
+.slick-prev:before, .slick-next:before {
+  font-family: "slick";
+  font-size: 20px;
+  line-height: 1;
+  color: white;
+  opacity: 0.75;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* line 97, /Users/fadie/Desktop/Freelance/svelt_mvp_2/svelt_mvp/app/assets/stylesheets/slick-theme.scss */
+.slick-prev {
+  left: -25px;
+}
+/* line 99, /Users/fadie/Desktop/Freelance/svelt_mvp_2/svelt_mvp/app/assets/stylesheets/slick-theme.scss */
+[dir="rtl"] .slick-prev {
+  left: auto;
+  right: -25px;
+}
+/* line 103, /Users/fadie/Desktop/Freelance/svelt_mvp_2/svelt_mvp/app/assets/stylesheets/slick-theme.scss */
+.slick-prev:before {
+  content: "←";
+}
+/* line 105, /Users/fadie/Desktop/Freelance/svelt_mvp_2/svelt_mvp/app/assets/stylesheets/slick-theme.scss */
+[dir="rtl"] .slick-prev:before {
+  content: "→";
+}
+
+/* line 111, /Users/fadie/Desktop/Freelance/svelt_mvp_2/svelt_mvp/app/assets/stylesheets/slick-theme.scss */
+.slick-next {
+  right: -25px;
+}
+/* line 113, /Users/fadie/Desktop/Freelance/svelt_mvp_2/svelt_mvp/app/assets/stylesheets/slick-theme.scss */
+[dir="rtl"] .slick-next {
+  left: -25px;
+  right: auto;
+}
+/* line 117, /Users/fadie/Desktop/Freelance/svelt_mvp_2/svelt_mvp/app/assets/stylesheets/slick-theme.scss */
+.slick-next:before {
+  content: "→";
+}
+/* line 119, /Users/fadie/Desktop/Freelance/svelt_mvp_2/svelt_mvp/app/assets/stylesheets/slick-theme.scss */
+[dir="rtl"] .slick-next:before {
+  content: "←";
+}
+
+/* Dots */
+/* line 127, /Users/fadie/Desktop/Freelance/svelt_mvp_2/svelt_mvp/app/assets/stylesheets/slick-theme.scss */
+.slick-slider {
+  margin-bottom: 30px;
+}
+
+/* line 131, /Users/fadie/Desktop/Freelance/svelt_mvp_2/svelt_mvp/app/assets/stylesheets/slick-theme.scss */
+.slick-dots {
+  position: absolute;
+  bottom: -45px;
+  list-style: none;
+  display: block;
+  text-align: center;
+  padding: 0;
+  width: 100%;
+}
+/* line 139, /Users/fadie/Desktop/Freelance/svelt_mvp_2/svelt_mvp/app/assets/stylesheets/slick-theme.scss */
+.slick-dots li {
+  position: relative;
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  margin: 0 5px;
+  padding: 0;
+  cursor: pointer;
+}
+/* line 147, /Users/fadie/Desktop/Freelance/svelt_mvp_2/svelt_mvp/app/assets/stylesheets/slick-theme.scss */
+.slick-dots li button {
+  border: 0;
+  background: transparent;
+  display: block;
+  height: 20px;
+  width: 20px;
+  outline: none;
+  line-height: 0px;
+  font-size: 0px;
+  color: transparent;
+  padding: 5px;
+  cursor: pointer;
+}
+/* line 159, /Users/fadie/Desktop/Freelance/svelt_mvp_2/svelt_mvp/app/assets/stylesheets/slick-theme.scss */
+.slick-dots li button:hover, .slick-dots li button:focus {
+  outline: none;
+}
+/* line 161, /Users/fadie/Desktop/Freelance/svelt_mvp_2/svelt_mvp/app/assets/stylesheets/slick-theme.scss */
+.slick-dots li button:hover:before, .slick-dots li button:focus:before {
+  opacity: 1;
+}
+/* line 165, /Users/fadie/Desktop/Freelance/svelt_mvp_2/svelt_mvp/app/assets/stylesheets/slick-theme.scss */
+.slick-dots li button:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "•";
+  width: 20px;
+  height: 20px;
+  font-family: "slick";
+  font-size: 6px;
+  line-height: 20px;
+  text-align: center;
+  color: black;
+  opacity: 0.25;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+/* line 182, /Users/fadie/Desktop/Freelance/svelt_mvp_2/svelt_mvp/app/assets/stylesheets/slick-theme.scss */
+.slick-dots li.slick-active button:before {
+  color: black;
+  opacity: 0.75;
+}
+/* Slider */
+
+.slick-slider
+{
+    position: relative;
+
+    display: block;
+    box-sizing: border-box;
+
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -ms-touch-action: pan-y;
+        touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list
+{
+    position: relative;
+
+    display: block;
+    overflow: hidden;
+
+    margin: 0;
+    padding: 0;
+}
+.slick-list:focus
+{
+    outline: none;
+}
+.slick-list.dragging
+{
+    cursor: pointer;
+    cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list
+{
+    -webkit-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+}
+
+.slick-track
+{
+    position: relative;
+    top: 0;
+    left: 0;
+
+    display: block;
+}
+.slick-track:before,
+.slick-track:after
+{
+    display: table;
+
+    content: '';
+}
+.slick-track:after
+{
+    clear: both;
+}
+.slick-loading .slick-track
+{
+    visibility: hidden;
+}
+
+.slick-slide
+{
+    display: none;
+    float: left;
+
+    height: 100%;
+    min-height: 1px;
+}
+[dir='rtl'] .slick-slide
+{
+    float: right;
+}
+.slick-slide img
+{
+    display: block;
+}
+.slick-slide.slick-loading img
+{
+    display: none;
+}
+.slick-slide.dragging img
+{
+    pointer-events: none;
+}
+.slick-initialized .slick-slide
+{
+    display: block;
+}
+.slick-loading .slick-slide
+{
+    visibility: hidden;
+}
+.slick-vertical .slick-slide
+{
+    display: block;
+
+    height: auto;
+
+    border: 1px solid transparent;
+}
+/* Slider */
+/* line 4, /Users/fadie/Desktop/big_business/svelt_mvp_2/svelt_mvp/app/assets/stylesheets/slick.scss */
+.slick-slider {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -ms-touch-action: pan-y;
+  touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* line 19, /Users/fadie/Desktop/big_business/svelt_mvp_2/svelt_mvp/app/assets/stylesheets/slick.scss */
+.slick-list {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+/* line 26, /Users/fadie/Desktop/big_business/svelt_mvp_2/svelt_mvp/app/assets/stylesheets/slick.scss */
+.slick-list:focus {
+  outline: none;
+}
+/* line 30, /Users/fadie/Desktop/big_business/svelt_mvp_2/svelt_mvp/app/assets/stylesheets/slick.scss */
+.slick-list.dragging {
+  cursor: pointer;
+  cursor: hand;
+}
+
+/* line 35, /Users/fadie/Desktop/big_business/svelt_mvp_2/svelt_mvp/app/assets/stylesheets/slick.scss */
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+  -webkit-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+/* line 44, /Users/fadie/Desktop/big_business/svelt_mvp_2/svelt_mvp/app/assets/stylesheets/slick.scss */
+.slick-track {
+  position: relative;
+  left: 0;
+  top: 0;
+  display: block;
+}
+/* line 50, /Users/fadie/Desktop/big_business/svelt_mvp_2/svelt_mvp/app/assets/stylesheets/slick.scss */
+.slick-track:before, .slick-track:after {
+  content: "";
+  display: table;
+}
+/* line 56, /Users/fadie/Desktop/big_business/svelt_mvp_2/svelt_mvp/app/assets/stylesheets/slick.scss */
+.slick-track:after {
+  clear: both;
+}
+/* line 60, /Users/fadie/Desktop/big_business/svelt_mvp_2/svelt_mvp/app/assets/stylesheets/slick.scss */
+.slick-loading .slick-track {
+  visibility: hidden;
+}
+
+/* line 64, /Users/fadie/Desktop/big_business/svelt_mvp_2/svelt_mvp/app/assets/stylesheets/slick.scss */
+.slick-slide {
+  float: left;
+  height: 100%;
+  min-height: 1px;
+  display: none;
+}
+/* line 68, /Users/fadie/Desktop/big_business/svelt_mvp_2/svelt_mvp/app/assets/stylesheets/slick.scss */
+[dir="rtl"] .slick-slide {
+  float: right;
+}
+/* line 71, /Users/fadie/Desktop/big_business/svelt_mvp_2/svelt_mvp/app/assets/stylesheets/slick.scss */
+.slick-slide img {
+  display: block;
+}
+/* line 74, /Users/fadie/Desktop/big_business/svelt_mvp_2/svelt_mvp/app/assets/stylesheets/slick.scss */
+.slick-slide.slick-loading img {
+  display: none;
+}
+/* line 80, /Users/fadie/Desktop/big_business/svelt_mvp_2/svelt_mvp/app/assets/stylesheets/slick.scss */
+.slick-slide.dragging img {
+  pointer-events: none;
+}
+/* line 84, /Users/fadie/Desktop/big_business/svelt_mvp_2/svelt_mvp/app/assets/stylesheets/slick.scss */
+.slick-initialized .slick-slide {
+  display: block;
+}
+/* line 88, /Users/fadie/Desktop/big_business/svelt_mvp_2/svelt_mvp/app/assets/stylesheets/slick.scss */
+.slick-loading .slick-slide {
+  visibility: hidden;
+}
+/* line 92, /Users/fadie/Desktop/big_business/svelt_mvp_2/svelt_mvp/app/assets/stylesheets/slick.scss */
+.slick-vertical .slick-slide {
+  display: block;
+  height: auto;
+  border: 1px solid transparent;
+}
+/*
+
+	Supersized - Fullscreen Slideshow jQuery Plugin
+	Version : 3.2.7
+	Site	: www.buildinternet.com/project/supersized
+
+	Author	: Sam Dunn
+	Company : One Mighty Roar (www.onemightyroar.com)
+	License : MIT License / GPL License
+
+*/
+
+
+* { margin:0; padding:0; }
+body { height:100%; }
+	img { border:none; }
+
+	#supersized-loader { position:absolute; top:50%; left:50%; z-index:0; width:60px; height:60px; margin:-30px 0 0 -30px; text-indent:-999em; background:url(../img/progress.gif) no-repeat center center;}
+
+	#supersized {  display:block; position:fixed; left:0; top:0; overflow:hidden; z-index:-999; height:100%; width:100%; }
+		#supersized img { width:auto; height:auto; position:relative; display:none; outline:none; border:none; }
+			#supersized.speed img { -ms-interpolation-mode:nearest-neighbor; image-rendering: -moz-crisp-edges; }	/*Speed*/
+			#supersized.quality img { -ms-interpolation-mode:bicubic; image-rendering: optimizeQuality; }			/*Quality*/
+
+		#supersized li { display:block; list-style:none; z-index:-30; position:fixed; overflow:hidden; top:0; left:0; width:100%; height:100%; background:#111; }
+		#supersized a { width:100%; height:100%; display:block; }
+			#supersized li.prevslide { z-index:-20; }
+			#supersized li.activeslide { z-index:-10; }
+			#supersized li.image-loading { background:#111 url(../img/progress.gif) no-repeat center center; width:100%; height:100%; }
+				#supersized li.image-loading img{ visibility:hidden; }
+			#supersized li.prevslide img, #supersized li.activeslide img{ display:inline; }
+/*
+
+	Supersized - Fullscreen Slideshow jQuery Plugin
+	Version : 3.2.7
+	Site	: www.buildinternet.com/project/supersized
+	
+	Theme 	: Shutter 1.2
+	Author	: Sam Dunn
+	Company : One Mighty Roar (www.onemightyroar.com)
+	License : MIT License / GPL License
+	
+*/
+
+	/* Controls Bar
+	----------------------------*/
+	#controls-wrapper { margin:0 auto; height:42px; width:100%; bottom:0px; left:0; z-index:4; background:url(../img/nav-bg.png) repeat-x; position:fixed; }
+		#controls { overflow:hidden; height:100%; position:relative; text-align:left; z-index:5; }
+			#slidecounter { float:left; color:#999; font:14px "Helvetica Neue", Helvetica, Arial, sans-serif; text-shadow:#000 0 -1px 0; margin:0px 10px 0 15px; line-height:42px; }
+			#slidecaption { overflow:hidden; float:left; color:#FFF; font:400 14px "Helvetica Neue", Helvetica, Arial, sans-serif; text-shadow:#000 1px 1px 2px; margin:0 20px 0 0; line-height:42px; }
+			
+			#navigation { float:right; margin:0px 20px 0 0; }
+				#play-button{ float:left; margin-top:1px;border-right:1px solid #333; background:url('../img/bg-hover.png') repeat-x 0 44px; }
+					#play-button:hover{ background-position:0 1px; cursor:pointer; }
+				
+				#prevslide, #nextslide{ position:absolute; height:43px; width:43px; top:50%; margin-top:-21px; opacity:0.6; }
+					#prevslide{ left:10px; background:url('../img/back.png'); }
+					#nextslide{ right:10px; background:url('../img/forward.png'); }
+						#prevslide:active, #nextslide:active{ margin-top:-19px; }
+						#prevslide:hover, #nextslide:hover{ cursor:pointer; }
+				
+				ul#slide-list{ padding:15px 0; float:left; position:absolute; left:50%; }
+					ul#slide-list li{ list-style:none; width:12px; height:12px; float:left; margin:0 5px 0 0; }
+						ul#slide-list li.current-slide a, ul#slide-list li.current-slide a:hover{ background-position:0 0px; }
+						ul#slide-list li a{ display:block; width:12px; height:12px; background:url('../img/nav-dot.png') no-repeat 0 -24px; }
+							ul#slide-list li a:hover{ background-position:0 -12px; cursor:pointer; }
+				
+				#tray-button{ float:right; margin-top:1px; border-left:1px solid #333; background:url('../img/bg-hover.png') repeat-x 0 44px; }
+					#tray-button:hover{ background-position:0 1px; cursor:pointer; }
+		
+	
+	/* Progress Bar
+	----------------------------*/					
+	#progress-back{ z-index:5; position:fixed; bottom:42px; left:0; height:8px; width:100%; background:url('../img/progress-back.png') repeat-x; }
+		#progress-bar{ position:relative; height:8px; width:100%; background:url('../img/progress-bar.png') repeat-x; }
+	
+	
+	/* Thumbnail Navigation
+	----------------------------*/	
+	#nextthumb,#prevthumb { z-index:2; display:none; position:fixed; bottom:61px; height:75px; width:100px; overflow:hidden; background:#ddd; border:1px solid #fff; -webkit-box-shadow:0 0 5px #000; }
+		#nextthumb { right:12px; }
+		#prevthumb { left:12px; }
+			#nextthumb img, #prevthumb img { width:150px; height:auto;  }
+			#nextthumb:active, #prevthumb:active { bottom:59px; }
+			#nextthumb:hover, #prevthumb:hover { cursor:pointer; }
+	
+	
+	/* Thumbnail Tray
+	----------------------------*/			
+	#thumb-tray{ position:fixed; z-index:3; bottom:0; left:0; background:url(../img/bg-black.png); height:150px; width:100%; overflow:hidden; text-align:center; box-shadow: 0px 0px 4px #000; }
+		
+		#thumb-back, #thumb-forward{ position:absolute; z-index:5; bottom:42px; height:108px; width:40px; }
+			#thumb-back{ left:0; background: url('../img/thumb-back.png') no-repeat center center;}
+			#thumb-forward{ right:0; background:url('../img/thumb-forward.png') no-repeat center center;}
+				#thumb-back:hover, #thumb-forward:hover{ cursor:pointer; background-color:rgba(256,256,256, 0.1); }
+					#thumb-back:hover{ border-right:1px solid rgba(256,256,256, 0.2); }
+					#thumb-forward:hover{ border-left:1px solid rgba(256,256,256, 0.2); }
+		
+		
+		ul#thumb-list{ display:inline-block; list-style:none; position:relative; left:0px; padding:0 0px; }
+			ul#thumb-list li{ background:#111; list-style:none; display:inline; width:150px; height:108px; overflow:hidden; float:left; margin:0; }
+				ul#thumb-list li img { width:200px; height:auto; opacity:0.5; -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)"; filter:alpha(opacity=60); -webkit-transition: all 100ms ease-in-out; transition: all 100ms ease-in-out; }
+				ul#thumb-list li.current-thumb img, ul#thumb-list li:hover img{ opacity:1; -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)"; filter:alpha(opacity=100); }
+				ul#thumb-list li:hover{ cursor:pointer; }
+				
+/* line 5, /Users/fadie/Desktop/Freelance/svelt_mvp_2/svelt_mvp/app/assets/stylesheets/video.scss */
+.video-placement {
+  display: block;
+  margin: auto;
+}
+
+/* line 10, /Users/fadie/Desktop/Freelance/svelt_mvp_2/svelt_mvp/app/assets/stylesheets/video.scss */
+.video-title {
+  font-family: "futura-pt", sans-serif;
+  font-size: 24px;
+  text-align: center;
+}
+/*===================HOME CAROUSEL===================*/
+/* line 7, /Users/fadie/Desktop/big_business/svelt_mvp_2/svelt_mvp/app/assets/stylesheets/welcome.scss */
+.carousel {
+  height: 60em;
+  z-index: 1;
+}
+
+/* line 12, /Users/fadie/Desktop/big_business/svelt_mvp_2/svelt_mvp/app/assets/stylesheets/welcome.scss */
+.carousel-inner > .item > img {
+  min-width: 100%;
+  height: 60em;
+  z-index: 1;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+
+
+ */
+
+
+@import "bootstrap";
+@import "bootstrap-sprockets";
+
+/* ===================TOP NAVBAR=================== */
+
+.navbar {
+  background-color: transparent;
+  border: 0;
+  margin: 0;
+}
+
+.navbar-container {
+  background-color: white;
+  max-height: 65px;
+}
+
+.navbar-right {
+  color: black;
+}
+
+button.navbar-toggle {
+  border: none;
+  padding-top: 16px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  float: right;
+}
+
+.submenu {
+  background-color: white;
+  z-index: 100;
+  width: 100%;
+  box-shadow: 2.5px 2.5px 1.25px rgba(0,0,0,0.1);
+  -moz-box-shadow: 2.5px 2.5px 1.25px rgba(0,0,0,0.1);
+  -webkit-box-shadow: 2.5px 2.5px 1.25px rgba(0,0,0,0.1);
+  -o-box-shadow: 2.5px 2.5px 1.25px rgba(0,0,0,0.1);
+}
+
+.top-menu-heading {
+  font-family: "futura-pt",sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 24px;
+  min-width: 5em;
+  text-align: center;
+  height: 55px;
+  line-height: 45px;
+  padding: 0;
+  margin: 0;
+}
+
+.top-submenu-heading {
+  font-family: "futura-pt",sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: black;
+  font-size: 14px;
+  text-align: center;
+  min-width: 5em;
+}
+
+.top-submenu-heading:hover {
+  text-decoration: none;
+}
+
+.navbar-nav>li>a {
+  color: black !important;
+}
+
+ul li ul{
+  display: none;
+}
+
+ul li:hover ul{
+  display: block;
+  position: absolute;
+}
+
+.topbar {
+  height: 80px;
+  margin: 26px 35px 0 0;
+}
+
+#logo {
+  padding: 0 0 0 2rem;
+}
+
+/* ===================BODY=================== */
+
+html, body {
+  /*height: 100%;*/
+}
+
+.main-wrapper {
+  width: 100%;
+}
+
+.body-wrap {
+  /*height: 100%;*/
+}
+
+.col-md-12 {
+  padding: 0;
+}
+
+/* ===================FOOTER=================== */
+
+footer {
+  height: 50px;
+  background-color: white;
+}
+
+.mailing-list-input {
+ margin-right: 4rem;
+ display: none;
+ z-index: 98;
+ position: fixed;
+ right: 0;
+ width: 22rem;
+ font-family: "futura-pt",sans-serif;
+ font-size: 12px;
+ height: 22px;
+ bottom: 55px;
+ border-right: none;
+ padding: 0;
+ text-indent: 0.5rem;
+ z-index: 1000;
+ border-right: 0;
+ border: none;
+}
+
+.footer-style {
+ position: fixed;
+ bottom: 0;
+ width: 100%;
+}
+
+li .btm-menu-heading {
+ font-family: "futura-pt",sans-serif;
+ font-style: normal;
+ font-weight: 500;
+ text-transform: uppercase;
+ color: black;
+ font-size: 12px;
+ text-align: center;
+}
+
+.btm-menu-width {
+ width: 8rem;
+ text-align: left;
+}
+
+
+.mailing-list-btn {
+  background-color: white;
+  border: 0;
+  border-left: none;
+  display: inline;
+  position: fixed;
+  right: 2rem;
+  bottom: 55px;
+  height: 22px;
+  width: 2rem;
+  color: black;
+  z-index: 99;
+  text-align: center;
+  font-weight: bold;
+}
+
+.mailing-btn-icon {
+  height: 12px;
+  width: 23px;
+  padding-right: 4px;
+  padding-bottom: 1px;
+  z-index: 99;
+}
+
+.mailing-confirm {
+  display: none;
+  background-color: white;
+  width: 22rem;
+  height: 22px;
+  color: black;
+  position: fixed;
+  bottom: 55px;
+  right: 2rem;
+  text-align: center;
+  font-size: 12px;
+  font-family: "futura-pt",sans-serif;
+}
+
+.collab-logos {
+  height: 20px;
+  padding: 0 1rem 0 1rem;
+}
+
+
+.title-wrap {
+  margin: 0;
+  padding: 0 0 0 2rem;
+  height: 60px;
+}
+
+.shopping-cart-logo {
+  font-size: 15px;
+  color: black;
+  line-height: 15px;
+  margin: 0;
+  padding: 0;
+}
+
+.basket-count {
+  border: 1.5px solid black;
+  border-radius: 2rem;
+  font-family: "futura-pt", sans-serif;
+  font-weight: bold;
+  line-height: 20px;
+  color: black;
+}
+
+.cart-text {
+  color: black;
+
+}
+
+.cart-text:hover {
+  color: black;
+}
+
+.cart-text:visited {
+  color: black;
+}
+
+.cart-text {
+  color: black;
+}

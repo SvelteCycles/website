@@ -1,0 +1,29 @@
+<%= form_for @inventory, url: {action: 'update'}, html: {class: 'form'} do |f| %>
+  <p>
+    <%= f.label :product %>
+    <%= f.text_field :product_id %>
+  </p>
+  <p>
+    <%= f.label :gender %>
+    <%= f.number_field :gender_id %>
+  </p>
+  <p>
+    <%= f.label :size %>
+    <%= f.text_field :size_id %>
+  </p>
+  <p>
+    <%= f.label :colour %>
+    <%= f.text_field :colour_id %>
+  </p>
+  <p>
+    <%= f.label :quantity %>
+    <%= f.number_field :quantity %>
+  </p>
+  <p>
+    <%= f.label :sku %>
+    <%= f.text_field :sku %>
+  </p>
+  <p>
+    <%= f.submit "Update Stock" %>
+  </p>
+<% end %>

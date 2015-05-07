@@ -1,0 +1,161 @@
+// Place all the styles related to the Baskets controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+// BODY
+
+// ORDERS WRAP
+
+body {
+  padding-bottom: 50px;
+}
+
+.orders-wrap {
+  padding: 5rem;
+}
+
+.basket-title {
+  font-family: "futura-pt", sans-serif;
+  text-align: center;
+  font-size: 24px;
+}
+
+// BASKET PRODUCT TABLE
+
+.basket-receipt-table {
+  font-family: "futura-pt", sans-serif;
+}
+
+.basket-number-column {
+  width: 100%;
+}
+
+.basket-currency-column {
+  padding: 0 1rem 0 1rem;
+}
+
+.basket-remove-column {
+  padding: 0 1rem 0 1rem;
+  font-weight: normal;
+  text-transform: uppercase;
+  font-size: 10px;
+}
+
+// SUBTOTAL
+
+.subtotal-table {
+  border-top: 2.75px solid black;
+  font-family: "futura-pt", sans-serif;
+}
+
+.subtotal-column {
+  width: 100%;
+}
+
+.total-column {
+  padding: 0 1rem 0 1rem;
+}
+
+
+// PAYMENT WRAP
+
+.payment-wrap {
+  padding: 5rem;
+}
+
+.basket-payment-title {
+  font-family: "futura-pt", sans-serif;
+  text-align: center;
+  font-size: 24px;
+}
+
+.payment-fields-wrap {
+  padding: 0 1rem 0 1rem;
+}
+
+.payment-table {
+  font-family: "futura-pt", sans-serif;
+  font-weight: normal;
+  display: block;
+}
+
+.basket-image {
+  height: 100px;
+  width: 100px;
+  display: block;
+  margin: auto;
+}
+
+.main-basket-row {
+  height: 100px;
+  text-align: center;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.main-basket-text {
+  font-family: "futura-pt", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 18px;
+}
+
+.main-basket-row {
+  height: 100px;
+}
+
+.second-basket-row {
+  height: auto;
+  text-align: center;
+  font-family: "futura-pt", sans-serif;
+  text-transform: uppercase;
+}
+
+.payment-button-wrap {
+  display: block;
+  margin: auto;
+}
+
+.basket-item-wrap {
+  border-bottom: 1px solid #F2F4F6;
+
+}
+
+.basket-product-name {
+  // text-align: left;
+}
+
+.basket-product-name {
+  // text-align: left;
+  font-family: "futura-pt", sans-serif;
+  font-weight: bold;
+}
+
+.basket-currency-total {
+  text-align: center;
+  font-family: "futura-pt", sans-serif;
+}
+
+.basket-remove-text {
+  // text-align: left;
+  font-size: 12px;
+}
+
+.basket-options-text {
+  // text-align: left;
+  font-size: 12px;
+}
+
+.basket-option-title {
+  width: 100px;
+}
+
+.basket-total-text {
+  font-family: "futura-pt", sans-serif;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.basket-item-total {
+  text-align: center;
+}

@@ -1,0 +1,55 @@
+.new-product-form {
+  width: 50%;
+}
+
+.admin-button {
+  width: 200px;
+  height: 32px;
+  font-family: "futura-pt",sans-serif;
+  background-color: #F2F4F6;
+  border: 0;
+  display: block;
+  margin: auto;
+  text-transform: uppercase;
+}
+
+.admin-title {
+  font-family: "futura-pt",sans-serif;
+  font-size: 36px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.main-admin-text {
+  font-family: "futura-pt", sans-serif;
+  text-transform: uppercase;
+}
+
+.second-admin-text {
+  font-family: "futura-pt", sans-serif;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.admin-wrap {
+  width: 100%;
+  height: auto;
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+  border-bottom: 1.6px solid black;
+}
+
+.admin-image {
+  height: 50px;
+  width: 50px;
+}
+
+.main-admin-row {
+  height: 50px;
+  text-align: center;
+}
+
+.second-admin-row {
+  text-align: center;
+  height: auto;
+}

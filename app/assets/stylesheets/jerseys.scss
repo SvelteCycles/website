@@ -1,0 +1,20 @@
+// Place all the styles related to the Jerseys controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.category-product-wrap {
+  background-color: salmon;
+}
+
+.product-category-image {
+  height: 350px;
+  display: block;
+  margin: 0 auto 0 auto
+}
+
+.product-name-link {
+  color: white;
+  text-align: center;
+  display: none;
+  text-transform: capitalize;
+}

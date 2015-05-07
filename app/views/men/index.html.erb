@@ -1,0 +1,19 @@
+<section class="col-md-12 title-wrap">
+  <h2 class="page-name">Men</h2>
+</section>
+
+  <% if @mens_products.any? %>
+      <% @mens_products.each do |product| %>
+      <section class="col-md-4 single-product-wrap">
+      <a href="/men/<%= product.category.category %>/<%= product.id %>">
+      <img class="single-product-image" src="<%= product.product_images[0].photo.url %>">
+      </a>
+      </section>
+    <% end %>
+    <% else %>
+    <p>Currently no products available</p>
+    <% end %>
+    <br>
+    <br>
+    <br>
+    <br>
