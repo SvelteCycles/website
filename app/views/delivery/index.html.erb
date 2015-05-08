@@ -1,0 +1,80 @@
+<section class="col-md-12 title-wrap">
+  <h2 class="page-name">Order Confirmation</h2>
+</section>
+
+<section class="orders-wrap col-md-12">
+  <section class="col-md-4">
+  </section>
+  <section class="col-md-4">
+    <% @order_items.each do |order_item| %>
+    <section class="col-md-4 order-basket-height">
+      <img class="basket-image-2" src="<%= order_item.inventory.product_images.first.photo.url %>">
+    </section>
+    <section class="col-md-4 order-basket-height">
+      <h6 class="second-column-text"><%= order_item.inventory.product.name.upcase %></h6>
+    </section>
+    <section class="col-md-4 order-basket-height">
+      <h6 class="second-column-text">£<%= order_item.inventory.product.price %></h6>
+    </section>
+    <% end %><br>
+  </section>
+  <section class="col-md-4">
+  </section>
+</section>
+
+<section class="col-md-12">
+  <section class="col-md-4">
+  </section>
+  <section class="col-md-4">
+    <section class="col-md-4">
+    </section>
+    <section class="col-md-4">
+      <h4 class="second-column-text">Delivery Charge:</h4>
+    </section>
+    <section class="col-md-4">
+      <h4 class="second-column-text"><%= number_to_currency(current_order.shipping, unit: "£") %></h4>
+    </section>
+  </section>
+  <section class="col-md-4">
+  </section>
+</section>
+
+<section class="col-md-12">
+  <section class="col-md-4">
+  </section>
+  <section class="col-md-4">
+    <section class="col-md-4">
+    </section>
+    <section class="col-md-4">
+      <h4 class="second-column-text"><b>Total:</b></h4>
+    </section>
+    <section class="col-md-4">
+      <h4 class="second-column-text"><b><%= number_to_currency(current_order.total, unit: "£") %></b></h4>
+    </section>
+  </section>
+  <section class="col-md-4">
+  </section>
+</section>
+
+<section class="col-md-12">
+  <section class="col-md-5">
+  </section>
+  <section class="payments-wrap col-md-2">
+  <%= notice %>
+    <% if @order_items.size != 0 %>
+    <div class='container'>
+      <%= form_tag basket_payments_path(@order) do %>
+      <section class="payment-button-wrap">
+        <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+             data-key="<%= Rails.application.secrets.stripe_public_key %>"
+             data-description="Payment"
+             data-amount="<%= @amount %>"
+             data-currency="GBP"
+             data-shippingAddress="true">
+        </script>
+      </section>
+      <% end %>
+      <% end %>
+    </div>
+  </section>
+</section>

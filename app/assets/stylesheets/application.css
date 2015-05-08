@@ -1,0 +1,252 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ *= require slick
+ *= require slick-theme
+ */
+
+@import "bootstrap";
+@import "bootstrap-sprockets";
+
+/* ===================TOP NAVBAR=================== */
+
+.navbar {
+  background-color: transparent;
+  border: 0;
+  margin: 0;
+}
+
+.navbar-container {
+  background-color: white;
+  max-height: 55px;
+}
+
+.navbar-right {
+  color: black;
+}
+
+button.navbar-toggle {
+  border: none;
+  padding-top: 16px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.btm-list {
+  float: right;
+}
+
+.submenu {
+  background-color: white;
+  z-index: 100;
+  width: 100%;
+  box-shadow: 2.5px 2.5px 1.25px rgba(0,0,0,0.1);
+  -moz-box-shadow: 2.5px 2.5px 1.25px rgba(0,0,0,0.1);
+  -webkit-box-shadow: 2.5px 2.5px 1.25px rgba(0,0,0,0.1);
+  -o-box-shadow: 2.5px 2.5px 1.25px rgba(0,0,0,0.1);
+}
+
+.top-menu-heading {
+  font-family: "futura-pt",sans-serif;
+  -webkit-font-smoothing: antialiased;
+  font-style: normal;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 16px;
+  min-width: 5em;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  background-color: white;
+  z-index: 100;
+}
+
+.top-submenu-heading {
+  font-family: "futura-pt",sans-serif;
+  -webkit-font-smoothing: antialiased;
+  font-style: normal;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: black;
+  font-size: 10px;
+  text-align: center;
+  min-width: 5em;
+}
+
+#mens-submenu {
+  z-index: 99;
+  height: 140px;
+  background-color: white;
+}
+
+#womens-submenu {
+  z-index: 99;
+  height: 140px;
+  background-color: white;
+}
+
+.navbar-collapse {
+  z-index: 99;
+  background-color: white;
+}
+
+.collapse {
+  z-index: 99;
+  background-color: white;
+}
+
+.submenu-height {
+  height: 20px;
+  margin: 0;
+  background-color: white;
+  z-index: 100;
+}
+
+.top-submenu-heading:hover {
+  text-decoration: none;
+}
+
+.navbar-nav>li>a {
+  color: black !important;
+}
+
+.navbar-nav>li>ul>li {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-nav>li>ul>li>a {
+  margin: 0;
+  padding: 0;
+}
+
+ul li ul{
+  display: none;
+}
+
+ul li:hover ul{
+  display: block;
+  position: absolute;
+}
+
+/* ===================BODY=================== */
+
+html, body {
+  padding-bottom: 100px;
+}
+
+.main-wrapper {
+  width: 100%;
+}
+
+.body-wrap {
+  /*height: 100%;*/
+}
+
+.col-md-12 {
+  padding: 0;
+}
+
+/* ===================FOOTER=================== */
+
+footer {
+  height: 50px;
+  background-color: white;
+}
+
+.footer-style {
+ position: fixed;
+ bottom: 0;
+ width: 100%;
+}
+
+li .btm-menu-heading {
+ font-family: "futura-pt",sans-serif;
+ -webkit-font-smoothing: antialiased;
+ font-style: normal;
+ font-weight: 500;
+ text-transform: uppercase;
+ color: black;
+ font-size: 10px;
+ text-align: center;
+}
+
+.btm-menu-width {
+  margin: 0 1.4rem 0 0;
+  width: 70px;
+  text-align: right;
+  line-height: 0;
+}
+
+.collab-logos {
+  height: 20px;
+  padding: 0 1rem 0 1rem;
+}
+
+.title-wrap {
+  margin: 0rem 0 0 1.4rem;
+}
+
+.page-name {
+  font-size: 18px;
+  -webkit-font-smoothing: antialiased;
+  font-weight: 500;
+}
+
+#logo {
+  margin: 0 0 0 1.8rem;
+  height: 51px;
+  top: 2px;
+  position: absolute;
+}
+
+.shopping-cart-logo {
+  font-size: 12px;
+  line-height: 45px;
+  color: black;
+  margin: 0;
+  padding: 0;
+}
+
+.basket-count {
+  font-family: "futura-pt", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  font-weight: bold;
+  font-size: 12px;
+  height: 55px;
+  line-height: 51px;
+  color: black;
+  margin: 0;
+  padding: 0;
+}
+
+.cart-text {
+  color: black;
+}
+
+.cart-text:hover {
+  color: black;
+}
+
+.cart-text:visited {
+  color: black;
+}
+
+.cart-text {
+  color: black;
+}

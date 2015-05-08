@@ -1,0 +1,110 @@
+<section class="title-wrap col-md-12" id="scroll-anchor">
+  <h2 class="page-name"><a href="/women/">Women</a> | <a href="/women/baselayers">Baselayers</a> | <%= @baselayer.product.name %></h2>
+</section>
+
+<section class="front-image-wrap col-md-4">
+  <img src="<%= @baselayer.product_images.first.photo.url %>" class="show-product-image image-zoom" data-zoom-image="<%= @baselayer.product_images.first.photo.url %>">
+</section>
+
+<section class="back-image-wrap col-md-4">
+  <img src="<%= @baselayer.product_images.last.photo.url %>" class="show-product-image image-zoom" data-zoom-image="<%= @baselayer.product_images.first.photo.url %>">
+</section>
+
+<section class="info-wrap col-md-4">
+
+<section class="col-md-12 name-price-wrap">
+  <section class="col-md-12">
+    <h1 class="show-product-name"><%= @baselayer.product.name %></h1>
+  </section>
+  <section class="col-md-12">
+    <h3 class="show-product-price">£<%= @baselayer.product.price %></h3>
+  </section>
+</section>
+
+<section class="product-tabs-wrap col-md-12">
+  <section class="product-tabs">
+    <ul class="list-inline product-submenu">
+      <li class="show-product-tab-text details-submenu active"><a id="details" href="#tab1">Details</a></li>
+      <li class="show-product-tab-text description-submenu"><a id="description" href="#tab2">Description</a></li>
+      <li class="show-product-tab-text sizing-submenu"><a id="sizing" href="#tab3">Sizing</a></li>
+    </ul>
+  </section>
+    <section class="tab-content">
+      <section class="tab1 tab active">
+        <p class="show-product-info-text"><%= @baselayer.product.details %></p>
+      </section>
+      <section class="tab2 tab">
+        <p class="show-product-info-text"><%= @baselayer.product.description %></p>
+      </section>
+      <section class="tab3 tab">
+        <table class="table-position">
+          <tr>
+            <th class="show-product-info-text table-width-first"></th>
+            <th class="show-product-info-text table-width">S</th>
+            <th class="show-product-info-text table-width">M</th>
+            <th class="show-product-info-text table-width">L</th>
+          </tr>
+          <tr>
+            <td class="show-product-info-text table-width-first">Chest:</td>
+            <td class="show-product-info-text table-width">86</td>
+            <td class="show-product-info-text table-width">91</td>
+            <td class="show-product-info-text table-width">96</td>
+          </tr>
+          <tr>
+            <td class="show-product-info-text table-width-first">Waist:</td>
+            <td class="show-product-info-text table-width">71</td>
+            <td class="show-product-info-text table-width">76</td>
+            <td class="show-product-info-text table-width">81</td>
+          </tr>
+          <tr>
+            <td class="show-product-info-text table-width-first">Dress Size (U.K.):</td>
+            <td class="show-product-info-text table-width">4</td>
+            <td class="show-product-info-text table-width">6/8</td>
+            <td class="show-product-info-text table-width">10/12</td>
+          </tr>
+        </table>
+      </section>
+    </section>
+
+    <section class="dropdown-wrap col-md-12">
+      <section name="size-wrap" class="size-wrap col-md-6">
+        <form action="/order_items" data-remote="true" method="post">
+          <select name="size" class="size-dropdown">
+            <option class="size-dropdown" value="">Select Size</option>
+            <option value="small">Small</option>
+            <option value="medium">Medium</option>
+            <option value="large">Large</option>
+          </select>
+        </section>
+
+        <section class="add-to-wrap col-md-6">
+          <input name="gender" type="hidden" value="female"/>
+          <input name="product_id" type="hidden" value="<%= @baselayer.product.id %>"/>
+          <button class="add-to-bag">Add To Bag</button>
+        </form>
+      </section>
+    </section>
+</section>
+</section>
+
+<section class="button-wrap col-md-12">
+      <section class="middle-button-wrap">
+        <a href="#product-carousel" id="scroll-down"><img class="down-arrow" src="/assets/downarrow1.jpg"></a>
+      </section>
+    </section>
+
+    <div id="up-button-wrap col-md-12">
+      <section class="middle-button-wrap">
+        <a href="#" id="scroll-up"><img class="down-arrow" src="/assets/uparrow1.jpg"></a>
+      </section>
+    </div>
+
+<section class="col-md-12">
+    <section id="product-carousel" class="single-item" data-slick='{"slidesToShow" : 3, "slidesToScroll": 3'>
+      <div class="slideshow-slide"><img class="slideshow-image" src="https://s3.amazonaws.com/sveltewebsite/home_background_1.JPG"></div>
+      <div class="slideshow-slide"><img class="slideshow-image" src="https://s3.amazonaws.com/sveltewebsite/home_background_2.JPG"></div>
+      <div class="slideshow-slide"><img class="slideshow-image" src="https://s3.amazonaws.com/sveltewebsite/home_background_3.jpeg"></div>
+    </section>
+  </section>
+
+    <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.5.0/slick.min.js"></script>

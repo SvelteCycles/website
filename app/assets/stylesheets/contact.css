@@ -1,0 +1,55 @@
+/*// Place all the styles related to the Contact controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/*/
+
+/*===================CONTACT-FORM===================*/
+
+.contact-form label {
+  font-size: 12px;
+  -webkit-font-smoothing: antialiased;
+  font-family: "futura-pt", sans-serif;
+  text-transform: uppercase;
+  display: block;
+  margin: 0 auto 0 auto;
+  text-align: center;
+  font-weight: normal;
+}
+
+.contact-form input[type="text"], input[type="email"], textarea {
+  border: 1px solid #CCC;
+  height: 20px;
+  -webkit-font-smoothing: antialiased;
+  font-family: "futura-pt", sans-serif;
+  line-height: 15px;
+  margin: 0 auto 8px auto;
+  outline: 0 none;
+  display: block;
+  text-indent: 5px;
+}
+
+.contact-form textarea {
+  display: block;
+  margin: 0 auto 0 auto;
+  height: 180px;
+  text-indent: 5px;
+  outline: 0 none;
+}
+
+.contact-form input[type="submit"] {
+  text-align: center;
+  line-height: 12px;
+  padding: 10px;
+  border: none;
+  display: block;
+  margin: 8px auto 0 auto;
+  font-family: "futura-pt",sans-serif;
+  -webkit-font-smoothing: antialiased;
+  font-size: 12px;
+  color: white;
+  text-transform: uppercase;
+  background-color: black;
+}
+
+.contact-form input[type="submit"]:hover {
+  opacity: 0.8;
+}

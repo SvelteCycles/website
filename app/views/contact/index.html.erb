@@ -1,0 +1,37 @@
+<section class="title-wrap col-md-12">
+  <h2 class="page-name">Contact</h2>
+</section>
+
+<section class="col-md-12">
+  <section class="col-md-4">
+  </section>
+  <section class="col-md-4">
+    <div class="contact-form">
+      <%= form_tag('/contact', method: 'post') do %>
+        <section class="col-md-12">
+          <%= label_tag(:email, 'Email') %>
+        </section>
+        <section class="col-md-12">
+          <%= email_field(:user, :address) %>
+        </section>
+        <section class="col-md-12">
+          <%= label_tag(:name, 'Name') %>
+        </section>
+        <section class="col-md-12">
+          <%= text_field_tag(:name) %>
+        </section>
+        <section class="col-md-12">
+          <%= label_tag(:message) %>
+        </section>
+        <section class="col-md-12">
+          <%= text_area_tag(:message) %>
+        </section>
+        <section class="col-md-12">
+          <%= submit_tag('Send') %>
+        </section>
+      <% end %>
+    </div>
+  </section>
+  <section class="col-md-4">
+  </section>
+</section>

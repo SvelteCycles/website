@@ -1,0 +1,207 @@
+// Place all the styles related to the Baskets controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+// BODY
+
+// ORDERS WRAP
+
+.orders-wrap {
+  padding: 5rem;
+}
+
+.basket-title {
+  font-family: "futura-pt", sans-serif;
+  text-align: center;
+  font-size: 24px;
+}
+
+// BASKET PRODUCT TABLE
+
+.basket-receipt-table {
+  font-family: "futura-pt", sans-serif;
+}
+
+.basket-number-column {
+  width: 100%;
+}
+
+.basket-image-2 {
+  height: 47px;
+  width: 38px;
+  display: block;
+  margin: auto;
+}
+
+.order-basket-height {
+  height: 47px;
+  line-height: 47px;
+}
+
+.basket-confirm-text {
+  text-align: center;
+}
+
+.basket-currency-column {
+  padding: 0 1rem 0 1rem;
+}
+
+.basket-remove-column {
+  padding: 0 1rem 0 1rem;
+  font-weight: normal;
+  text-transform: uppercase;
+  font-size: 10px;
+}
+
+// SUBTOTAL
+
+.subtotal-table {
+  border-top: 2.75px solid black;
+  font-family: "futura-pt", sans-serif;
+}
+
+.subtotal-column {
+  width: 100%;
+}
+
+.total-column {
+  padding: 0 1rem 0 1rem;
+}
+
+
+// PAYMENT WRAP
+
+.payment-wrap {
+  padding: 5rem;
+}
+
+.basket-payment-title {
+  font-family: "futura-pt", sans-serif;
+  text-align: center;
+  font-size: 24px;
+}
+
+.payment-fields-wrap {
+  padding: 0 1rem 0 1rem;
+}
+
+.payment-table {
+  font-family: "futura-pt", sans-serif;
+  font-weight: normal;
+  display: block;
+}
+
+.basket-image {
+  height: 100px;
+  width: 100px;
+  display: block;
+  margin: auto;
+}
+
+.main-basket-row {
+  height: 100px;
+  text-align: center;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.main-basket-row {
+  height: 100px;
+}
+
+.total-row {
+  border-top: 1.5px solid black;
+  border-bottom: 1.5px solid black;
+}
+
+.second-basket-row {
+  height: auto;
+  text-align: center;
+  font-family: "futura-pt", sans-serif;
+  text-transform: uppercase;
+}
+
+.payment-button-wrap {
+  display: block;
+  margin: auto;
+}
+
+.button-placement {
+}
+
+.delivery-message {
+  text-align: center;
+  font-size: 12px;
+  -webkit-font-smoothing: antialiased;
+  font-family: "futura-pt", sans-serif;
+  text-transform: uppercase;
+}
+
+.basket-product-name {
+  text-transform: uppercase;
+  font-family: "futura-pt", sans-serif;
+  font-size: 18px;
+  -webkit-font-smoothing: antialiased;
+  font-weight: normal;
+}
+
+.basket-remove-text {
+  font-size: 10px;
+  -webkit-font-smoothing: antialiased;
+  font-family: "futura-pt", sans-serif;
+  text-transform: uppercase;
+  color: white;
+}
+
+.basket-options-text {
+  font-size: 10px;
+  -webkit-font-smoothing: antialiased;
+  font-family: "futura-pt", sans-serif;
+  text-transform: uppercase;
+}
+
+.basket-option-title {
+  height: 100px;
+}
+
+.basket-total-text {
+  font-family: "futura-pt", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  font-size: 18px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.basket-currency-total {
+  font-family: "futura-pt", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  font-size: 18px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: normal;
+}
+
+.column-width {
+  width: 100px;
+}
+
+.first-column-text {
+  text-align: left;
+  text-transform: uppercase;
+  font-family: "futura-pt", sans-serif;
+}
+
+.second-column-text {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "futura-pt", sans-serif;
+  font-size: 10px
+}
+
+.row-height {
+  height: 1px;
+}
+
+.button-margin {
+  margin: 100px;
+}

@@ -1,0 +1,37 @@
+<h3 class="pagename">Create a new product</h3>
+
+<%= form_for @product, url: {action: 'create'}, html: {multipart: true} do |f| %>
+  <p>
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+  </p>
+
+  <p>
+    <%= f.label :price %>
+    <%= f.number_field :price %>
+  </p>
+
+  <p>
+    <%= f.label :description %>
+    <%= f.text_field :description %>
+  </p>
+
+  <p>
+    <%= f.label :details %>
+    <%= f.text_field :details %>
+  </p>
+
+  <p>
+    <%= f.label :category %>
+    <%= f.collection_select :category_id, @categories, :id, :category, :prompt => "Select a category" %>
+  </p>
+
+  <p>
+    <%= f.label :photos %>
+    <%= file_field_tag "photos[]", type: :file, multiple: true %>
+  </p>
+
+  <p>
+    <%= f.submit "Add Product" %>
+  </p>
+<% end %>

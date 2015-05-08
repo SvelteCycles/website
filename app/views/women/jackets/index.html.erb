@@ -1,0 +1,39 @@
+<script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.5.0/slick.min.js"></script>
+
+<section class="title-wrap">
+  <h2 class="page-name">Women | Jackets</h2>
+</section>
+
+  <div class="slider multiple-items">
+    <% if @womens_jackets.any? %>
+      <% @womens_jackets.each do |jacket| %>
+        <div class="item">
+          <a href="/women/jackets/<%= jacket.id %>">
+            <img class="carousel-image" src="<%= jacket.product_images.first.photo.url %>"/>
+          </a>
+          <div class="item-text">
+            <h4><%= jacket.product.name.upcase %></h4>
+            <h4>£<%= jacket.product.price %></h4>
+          </div>
+        </div>
+      <% end %>
+      <% else %>
+        <p>There are currently no jackets available.</p>
+    <% end %>
+  </div>
+
+
+<script>
+  $(document).ready(function () {
+
+      $('.multiple-items').slick({
+          infinite: true,
+          arrows: true,
+          speed: 300,
+          slidesToShow: 3,
+          slidesToScroll: 2
+      });
+
+
+  });
+</script>
