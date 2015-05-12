@@ -18,6 +18,7 @@
 .contact-form input[type="text"], input[type="email"], textarea {
   border: 1px solid #CCC;
   height: 20px;
+  width: 50%;
   -webkit-font-smoothing: antialiased;
   font-family: "futura-pt", sans-serif;
   line-height: 15px;
