@@ -11,7 +11,7 @@ ActionMailer::Base.smtp_settings = {
    :address => "smtpout.europe.secureserver.net",
    :port => 465,
    :domain => "www.svelte-cycles.com",
-   :authentication => :plain,
+   :authentication => :login,
    :user_name => ENV["MAILER_EMAIL"],
    :password => ENV["MAILER_PASSWORD"]
  }
