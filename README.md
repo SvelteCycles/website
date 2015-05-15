@@ -19,7 +19,6 @@ Technologies
 - jQuery
 - HTML5/CSS3
 - AngularJS
-
 Pages include
 -------------
 - Homepage
