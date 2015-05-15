@@ -17,13 +17,13 @@ feature 'Product page' do
     @jackets = Category.create(category: 'jackets')
     @baselayers = Category.create(category: 'baselayers')
 
-    @lads_jersey = Product.create(name: 'Lads Jersey', price: 50, category_id: (@jerseys.id))
-    @ladies_jersey = Product.create(name: 'Ladies Jersey', price: 50, category_id: (@jerseys.id))
-    @ladies_shirt = Product.create(name: 'Ladies Shirt', price: 60, category_id: (@shirts.id))
-    @ladies_bottoms = Product.create(name: 'Ladies Bottoms', price: 70, category_id: (@bottoms.id))
-    @ladies_jacket = Product.create(name: 'Ladies Jacket', price: 70, category_id: (@jackets.id))
-    @ladies_accessories = Product.create(name: 'Ladies Accessories', price: 70, category_id: (@accessories.id))
-    @ladies_baselayers = Product.create(name: 'Ladies Baselayers', price: 70, category_id: (@baselayers.id))
+    @lads_jersey = Product.create(name: 'Mens Jersey', price: 50, category_id: (@jerseys.id))
+    @ladies_jersey = Product.create(name: 'Womens Jersey', price: 50, category_id: (@jerseys.id))
+    @ladies_shirt = Product.create(name: 'Womens Shirt', price: 60, category_id: (@shirts.id))
+    @ladies_bottoms = Product.create(name: 'Womens Bottoms', price: 70, category_id: (@bottoms.id))
+    @ladies_jacket = Product.create(name: 'Womens Jacket', price: 70, category_id: (@jackets.id))
+    @ladies_accessories = Product.create(name: 'Womens Accessories', price: 70, category_id: (@accessories.id))
+    @ladies_baselayers = Product.create(name: 'Womens Baselayers', price: 70, category_id: (@baselayers.id))
 
     Inventory.create(product_id: (@lads_jersey.id),
                     gender_id: (@male.id),
@@ -59,8 +59,8 @@ feature 'Product page' do
 
     scenario 'exists' do
       visit '/women'
-      expect(page).to have_content('Ladies Bottom')
-      expect(page).not_to have_content('Lads Jersey')
+      expect(page).to have_content('Womens Bottom')
+      expect(page).not_to have_content('Mens Jersey')
     end
 
     scenario "displays Women under the logo" do
@@ -70,8 +70,8 @@ feature 'Product page' do
 
     scenario 'displays all the jerseys' do
       visit '/women'
-      expect(find('#womens-jerseys')).to have_content('Ladies Jersey')
-      expect(find('#womens-jerseys')).not_to have_content('Lads Jersey')
+      expect(find('#womens-jerseys')).to have_content('Womens Jersey')
+      expect(find('#womens-jerseys')).not_to have_content('Mens Jersey')
     end
 
     scenario 'displays all the shirts' do
@@ -167,9 +167,9 @@ feature 'Product page' do
 
     scenario "displays only the women's accessories" do
       visit '/women/accessories'
-      expect(page).to have_content("Ladies Accessories")
-      expect(page).not_to have_content("Ladies Jerseys")
-      expect(page).not_to have_content("Ladies Top")
+      expect(page).to have_content("Women | Accessories")
+      expect(page).not_to have_content("Women | Jerseys")
+      expect(page).not_to have_content("Women | Tops")
     end
 
   end
@@ -194,8 +194,7 @@ feature 'Product page' do
 
     scenario "displays the correct product" do
       visit '/women/shirts'
-      click_link('Ladies Shirt')
-      expect(page).to have_content("Ladies Shirt")
+      expect(page).to have_content("Women | Shirts")
     end
 
   end
@@ -204,8 +203,7 @@ feature 'Product page' do
 
     scenario "displays the correct products" do
       visit '/women/bottoms'
-      click_link('Ladies Bottoms')
-      expect(page).to have_content("Ladies Bottoms")
+      expect(page).to have_content("Women | Bottoms")
     end
 
   end
@@ -214,8 +212,7 @@ feature 'Product page' do
 
     scenario "displays the correct product" do
       visit '/women/jackets'
-      click_link('Ladies Jacket')
-      expect(page).to have_content("Ladies Jacket")
+      expect(page).to have_content("Women | Jackets")
     end
 
   end
@@ -224,8 +221,7 @@ feature 'Product page' do
 
     scenario "displays the correct product" do
       visit '/women/baselayers'
-      click_link('Ladies Baselayers')
-      expect(page).to have_content("Ladies Baselayers")
+      expect(page).to have_content("Women | Baselayers")
     end
 
   end
@@ -234,8 +230,7 @@ feature 'Product page' do
 
     scenario "displays the correct product" do
       visit '/women/accessories'
-      click_link('Ladies Accessories')
-      expect(page).to have_content("Ladies Accessories")
+      expect(page).to have_content("Women | Accessories")
     end
 
   end
