@@ -2,12 +2,13 @@
  <h2 class="page-name"><a href="/women/">Women</a> | <a href="/women/jerseys">Jerseys</a> | <%= @jersey.product.name %></h2>
 </section>
 
+<section class="product-top-half">
 <section class="front-image-wrap col-md-4">
  <img src="<%= @jersey.product_images.first.photo.url %>" class="show-product-image image-zoom" data-zoom-image="<%= @jersey.product_images.first.photo.url %>">
 </section>
 
 <section class="back-image-wrap col-md-4">
- <img src="<%= @jersey.product_images.last.photo.url %>" class="show-product-image image-zoom" data-zoom-image="<%= @jersey.product_images.first.photo.url %>">
+ <img src="<%= @jersey.product_images.last.photo.url %>" class="show-product-image image-zoom" data-zoom-image="<%= @jersey.product_images.last.photo.url %>">
 </section>
 
 <section class="info-wrap col-md-4">
@@ -92,6 +93,7 @@
        <a href="#product-carousel" id="scroll-down"><img class="down-arrow" src="/assets/downarrow1.jpg"></a>
      </section>
    </section>
+ </section>
 
    <div id="up-button-wrap col-md-12">
      <section class="middle-button-wrap">

@@ -13,7 +13,6 @@ bottoms = Category.create(category: "bottoms")
 accessories = Category.create(category: "accessories")
 baselayers = Category.create(category: "baselayers")
 
-<<<<<<< HEAD
 male = Gender.create(sex: "male")
 female = Gender.create(sex: "female")
 
@@ -71,4 +70,4 @@ arm_warmers = Product.create(name: "arm warmers", details: "Brushed interior for
 classic_tee = Product.create(name: "classic tee", details: "High quality combed Egyptian cotton, Straight hem, Relaxed fit",
               description: "The men’s white Classic Tee is a wardrobe essential; versatile and timeless. It is perfect for a clean, crisp look – and we’re confident that once you try one, it’ll quickly become your go-to plain white t-shirt",
               price: 60, category_id: baselayers.id)
-the_base= Product.create(name: "the base", details: "100% merino wool, Flat-lock seams for comfort, Ride specific cut",
+# the_base= Product.create(name: "the base", details: "100% merino wool, Flat-lock seams for comfort, Ride specific cut",
