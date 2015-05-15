@@ -1,7 +1,9 @@
 Rails.application.routes.draw do
 
   devise_for :users
-  root 'welcome#index'
+  root 'landing#index'
+
+  get '/index', to: 'welcome#index'
 
   scope '/men' do
     resources :jerseys, :controller => 'men/jerseys'
