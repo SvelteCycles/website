@@ -23,7 +23,7 @@
   -webkit-font-smoothing: antialiased;
   font-size: 46px;
   text-align: center;
-  text-shadow: 0px 0.5px 0.5px #000;
+  text-shadow: 0 0.5px 0.5px #000;
 }
 
 .landing-text {
@@ -32,7 +32,7 @@
   -webkit-font-smoothing: antialiased;
   font-size: 24px;
   text-align: center;
-  text-shadow: 0px 0.5px 0.5px #000;
+  text-shadow: 0 0.5px 0.5px #000;
 
 }
 
@@ -60,6 +60,7 @@
   text-indent: 10px;
   display: block;
   margin: auto;
+  text-align: center;
 }
 
 .landing-social-wrap {
@@ -72,4 +73,12 @@
   -webkit-justify-content: center;
   justify-content: center;
   padding-bottom: 2rem;
+}
+
+.no-bottom {
+  border-bottom: 0;
+}
+
+.kickstarter-link {
+  text-decoration: underline;
 }
