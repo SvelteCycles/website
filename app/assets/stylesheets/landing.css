@@ -54,6 +54,21 @@
   margin: auto;
 }
 
+.shopping-btn {
+  background-color: transparent;
+  border: 0.2rem solid white;
+  height: 2rem;
+  width: 10%;
+  color: white;
+  font-family: "futura-pt", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-transform: uppercase;
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  font-size: 1rem;
+}
+
 .landing-input {
   background-color: transparent;
   border: 2.25px solid white;
