@@ -1,5 +1,5 @@
 .new-product-form {
-  width: 50%;
+  /*width: 50%;*/
 }
 
 .admin-button {
@@ -36,7 +36,6 @@
   height: auto;
   border-top-right-radius: 8px;
   border-top-left-radius: 8px;
-  border-bottom: 1.6px solid black;
 }
 
 .admin-image {
