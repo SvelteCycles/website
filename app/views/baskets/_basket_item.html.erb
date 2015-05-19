@@ -12,7 +12,7 @@
   </section>
   <section class="col-md-2 main-basket-row">
     <h4 class="main-basket-text basket-total-text"><%= number_to_currency(order_item.total_price, unit: "£") %></h4>
-    <h6 class="basket-remove-text"><%= link_to "Remove", order_item, { data: { confirm: "Are you sure you wish to delete the product '#{order_item.inventory.product.name.upcase}' from your cart?" }, method: :delete, remote: true, class: :remove } %></h6>
+    <h6 class="basket-remove-text"><%= link_to "Remove", order_item, method: :delete, class: :remove %></h6>
   </section>
   <section class="col-md-3">
   </section>

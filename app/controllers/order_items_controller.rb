@@ -12,6 +12,7 @@ class OrderItemsController < ApplicationController
 
     @order_item = @order.order_items.new(inventory_id: @inventory.id, quantity: 1)
     @order.save
+
     session[:order_id] = @order.id
   end
 
@@ -20,6 +21,8 @@ class OrderItemsController < ApplicationController
     @order_item = @order.order_items.find(params[:id])
     @order_item.destroy
     @order_items = @order.order_items
+
+    redirect_to :back
   end
 
 end
