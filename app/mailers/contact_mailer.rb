@@ -18,7 +18,7 @@ class ContactMailer < ActionMailer::Base
     @order = order
     @order_items = order_items
 
-    mail(to: @email, bcc:'pellicena@gmail.com', from: 'info@svelte-cycles.com',
+    mail(to: @email, bcc:'info@svelte-cycles.com', from: 'info@svelte-cycles.com',
           subject: 'Confirmation from Svelte Website')
   end
 
@@ -31,7 +31,7 @@ class ContactMailer < ActionMailer::Base
     @order = order
     @order_items = order_items
 
-    mail(to: 'pellicena@gmail.com', from: 'info@svelte-cycles.com',
+    mail(to: 'info@svelte-cycles.com', from: 'info@svelte-cycles.com',
           subject: 'Order confirmation from Svelte Website')
   end
 
