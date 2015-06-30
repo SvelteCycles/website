@@ -10,7 +10,10 @@ class ConfirmationController < ApplicationController
     @order = current_order
     @order_items = current_order.order_items
 
-    ContactMailer.confirmation_email(@email, @name, @address, @zip, @country, @order, @order_items).deliver_now
+    ContactMailer.customer_confirmation(@email, @name, @address, @zip, @country,
+                                        @order, @order_items).deliver_now
+    ContactMailer.svelte_confirmation(@email, @name, @address, @zip, @country,
+                                      @order, @order_items).deliver_now
     reset_session
   end
 

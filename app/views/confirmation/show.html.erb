@@ -14,6 +14,9 @@
   <h4 class="confirmation-title">Order:</h4><br>
 
   <p class="confirmation-text"><% @order_items.each do |item| %>
-        <%= item.inventory.product.name %> X <%= item.quantity %>, <%= item.inventory.colour.colour %>, <%= item.inventory.size.size %>, <%= item.inventory.gender.sex %><br>
+        <%= item.quantity %> X <%= item.inventory.product.name.upcase %>,
+        <%= item.inventory.colour.colour.upcase %>,
+        <%= item.inventory.size.size.upcase %>,
+        <%= item.inventory.gender.sex.upcase %><br>
         <% end %></p><br>
   <h4 class="confirmation-title">Total: £<%= @order.total %></h4>
