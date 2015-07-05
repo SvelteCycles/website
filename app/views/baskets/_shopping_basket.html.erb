@@ -41,8 +41,8 @@
 <% if @order_items.size != 0 %>
   <section class="col-md-6">
    <form action="/basket/delivery"><br>
-     <select name="shipping" class="size-dropdown button-placement">
-       <option class="size-dropdown" value="">DELIVERY</option>
+     <select name="shipping" class="delivery-dropdown button-placement" required="required">
+       <option class="size-dropdown" value="">CHOOSE DELIVERY OPTION</option>
        <option value="0">UK Standard Delivery: Free</option>
        <option value="5">UK Express Delivery (1-2 days): £5</option>
        <option value="0">International Ground (Federal Express): free</option>
