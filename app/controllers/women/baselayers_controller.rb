@@ -18,7 +18,8 @@ class Women::BaselayersController < ApplicationController
 
     @baselayer = Inventory.find(params[:id])
     @inventory = Inventory.where(product_id: @product.id, gender_id: @womens.id,
-                                  colour_id: @colour,id)
+                                  colour_id: @colour.id)
+                                  
   end
 
 end
