@@ -18,7 +18,7 @@ class Women::AccessoriesController < ApplicationController
 
     @accessory = Inventory.find(params[:id])
 
-    @inventory = Inventory.where(product_id: @product.id, gender_id: @womens.id.
+    @inventory = Inventory.where(product_id: @product.id, gender_id: @womens.id,
                                   colour_id: @colour.id)
   end
 
