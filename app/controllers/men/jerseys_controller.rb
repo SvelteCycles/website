@@ -8,8 +8,18 @@ class Men::JerseysController < ApplicationController
 
   def show
     @mens = Gender.find_by_sex('male')
+
+    @small = Size.find_by_size('small')
+    @medium = Size.find_by_size('medium')
+    @large = Size.find_by_size('large')
+
     @jersey = Inventory.find(params[:id])
-    @inventory = Inventory.where(product_id: @jersey.id, gender_id: @mens.id)
+
+    @colour = @jersey.colour
+    @product = @jersey.product
+
+    @inventory = Inventory.where(product_id: @product.id, gender_id: @mens.id,
+                                  colour_id: @colour.id)
   end
 
 end

@@ -8,8 +8,18 @@ class Women::BottomsController < ApplicationController
 
   def show
     @womens = Gender.find_by_sex('female')
+
+    @small = Size.find_by_size('small')
+    @medium = Size.find_by_size('medium')
+    @large = Size.find_by_size('large')
+
+    @colour = @bottoms.colour
+    @product = @bottoms.product
+
+
     @bottoms = Inventory.find(params[:id])
-    @inventory = Inventory.where(product_id: @bottoms.id, gender_id: @womens.id)
+    @inventory = Inventory.where(product_id: @product.id, gender_id: @womens.id,
+                                  colour_id: @colour.id)
   end
 
 end

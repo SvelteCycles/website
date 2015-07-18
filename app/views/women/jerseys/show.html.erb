@@ -70,12 +70,18 @@
    <section class="dropdown-wrap col-md-12">
      <section name="size-wrap" class="size-wrap col-md-6">
        <form action="/order_items" data-remote="true" method="post">
-         <select name="size" class="size-dropdown">
-           <option class="size-dropdown" value="">Select Size</option>
-           <option value="small">Small</option>
-           <option value="medium">Medium</option>
-           <option value="large">Large</option>
-         </select>
+          <select name="size" class="size-dropdown">
+            <option class="size-dropdown" value="">Select Size</option>
+            <% if @inventory.find_by(size_id: @small.id).quantity > 0 %>
+             <option value="small">Small</option>
+            <% end %>
+            <% if @inventory.find_by(size_id: @medium.id).quantity > 0 %>
+            <option value="medium">Medium</option>
+            <% end %>
+            <% if @inventory.find_by(size_id: @large.id).quantity > 0 %>
+            <option value="large">Large</option>
+            <% end %>
+          </select>
        </section>
 
        <section class="add-to-wrap col-md-6">

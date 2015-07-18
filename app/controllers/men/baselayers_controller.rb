@@ -8,8 +8,18 @@ class Men::BaselayersController < ApplicationController
 
   def show
     @mens = Gender.find_by_sex('male')
+
+    @small = Size.find_by_size('small')
+    @medium = Size.find_by_size('medium')
+    @large = Size.find_by_size('large')
+
     @baselayer = Inventory.find(params[:id])
-    @inventory = Inventory.where(product_id: @baselayer.id, gender_id: @mens.id)
+
+    @colour = @baselayer.colour
+    @product = @baselayer.product
+
+    @inventory = Inventory.where(product_id: @product.id, gender_id: @mens.id,
+                                  colour_id: @colour.id)
   end
 
 end
