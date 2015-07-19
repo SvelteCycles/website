@@ -13,10 +13,10 @@ class Men::ShirtsController < ApplicationController
     @medium = Size.find_by_size('medium')
     @large = Size.find_by_size('large')
 
-    @colour = @shirts.colour
-    @product = @shirts.product
-
     @shirt = Inventory.find(params[:id])
+
+    @colour = @shirt.colour
+    @product = @shirt.product
 
     @inventory = Inventory.where(product_id: @product.id, gender_id: @mens.id,
                                   colour_id: @colour.id)

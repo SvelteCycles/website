@@ -13,10 +13,11 @@ class Women::JerseysController < ApplicationController
     @medium = Size.find_by_size('medium')
     @large = Size.find_by_size('large')
 
-    @colour = @jerseys.colour
-    @product = @jerseys.product
-
     @jersey = Inventory.find(params[:id])
+
+    @colour = @jersey.colour
+    @product = @jersey.product
+
     @inventory = Inventory.where(product_id: @product.id, gender_id: @womens.id,
                                   colour_id: @colour.id)
   end
