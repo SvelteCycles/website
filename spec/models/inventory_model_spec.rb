@@ -3,7 +3,8 @@ require 'rails_helper'
 RSpec.describe Inventory, :type => :model do
 
   before(:each) do
-    @inventory = Inventory.create(product_id: 1, gender_id: 1, size_id: 1, sku: '123-123-123', quantity: 20)
+    @inventory = Inventory.create(product_id: 1, gender_id: 1, size_id: 1,
+                                  sku: '123-123-123', quantity: 20)
   end
 
   it 'can be created' do

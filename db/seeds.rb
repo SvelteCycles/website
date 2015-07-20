@@ -1,10 +1,7 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rake db:seed (or created alongside the db with db:setup).
-#
-# Examples:
-#
-#   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
-#   Mayor.create(name: 'Emanuel', city: cities.first)
+# ['jerseys', 'jackets', 'shirts', 'bottoms', 'accessories',
+#   'baselayers'].each do |category|
+#   Category.find_or_create_by!(category: category)
+# end
 
 jerseys = Category.create(category: "jerseys")
 jackets = Category.create(category: "jackets")
@@ -13,17 +10,29 @@ bottoms = Category.create(category: "bottoms")
 accessories = Category.create(category: "accessories")
 baselayers = Category.create(category: "baselayers")
 
+# ['male', 'female'].each do |gender|
+#   Gender.find_or_create_by!(sex: gender)
+# end
+
 male = Gender.create(sex: "male")
 female = Gender.create(sex: "female")
+
+# ['small', 'medium', 'large'].each do |size|
+#   Size.find_or_create_by!(size: size)
+# end
 
 small = Size.create(size: "small")
 medium = Size.create(size: "medium")
 large = Size.create(size: "large")
 
+# ['red', 'blue', 'pink', 'green', 'black', 'grey', 'beige', 'floral', 'white',
+#   'print', 'poc-blue', 'wo-blue', 'pattern'].each do |colour|
+#   Colour.find_or_create_by!(colour: colour)
+# end
+
 red = Colour.create(colour: "red")
 blue = Colour.create(colour: "blue")
 pink = Colour.create(colour: "pink")
-blue = Colour.create(colour: "blue")
 green = Colour.create(colour: "green")
 black = Colour.create(colour: "black")
 grey = Colour.create(colour: "grey")
@@ -75,3 +84,9 @@ small_mens_continental = Inventory.create(product_id: the_heavy.id, size_id: sma
                                           sku: "SVM-JAC-HEA-BLA-S", quantity: 0)
 medium_mens_continental = Inventory.create(product_id: the_heavy.id, size_id: medium.id, gender_id: male.id, colour_id: black.id,
                                           sku: "SVM-JAC-HEA-BLA-M", quantity: 10)
+small_womens_lounge = Inventory.create(product_id: lounge.id, size_id: small.id, gender_id: female.id, colour_id: blue.id,
+                                          sku: "SVW-SHI-LOU-BLU-S", quantity: 10)
+large_mens_bottoms = Inventory.create(product_id: classic.id, size_id: large.id, gender_id: male.id, colour_id: beige.id,
+                                          sku: "SVM-BOT-CLA-BEI-L", quantity: 5)
+                                          
+small_mens_continental.ProductImage.create(photo_file_name: "2_coming_soon_back.png")

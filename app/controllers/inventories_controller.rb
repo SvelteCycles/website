@@ -20,7 +20,7 @@ class InventoriesController < ApplicationController
           }
       end
       flash[:notice] = "Your stock has been added"
-      redirect_to '/admin'      
+      redirect_to '/admin'
     end
   end
 
@@ -46,7 +46,8 @@ class InventoriesController < ApplicationController
   private
 
     def inventory_params
-      params.require(:inventory).permit(:product_id, :gender_id, :size_id, :colour_id, :quantity, :sku)
+      params.require(:inventory).permit(:product_id, :gender_id, :size_id,
+                                        :colour_id, :quantity, :sku)
     end
 
 end
