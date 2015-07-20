@@ -71,13 +71,13 @@
         <form action="/order_items" data-remote="true" method="post">
           <select name="size" class="size-dropdown">
             <option class="size-dropdown" value="">Select Size</option>
-            <% if @inventory.find_by(size_id: @small.id).quantity > 0 %>
+            <% if @small_inventory != nil && @small_inventory.quantity > 0 %>
               <option value="small">Small</option>
             <% end %>
-            <% if @inventory.find_by(size_id: @medium.id).quantity > 0 %>
+            <% if @med_inventory != nil && @med_inventory.quantity > 0 %>
             <option value="medium">Medium</option>
             <% end %>
-            <% if @inventory.find_by(size_id: @large.id).quantity > 0 %>
+            <% if @large_inventory != nil && @large_inventory.quantity > 0 %>
             <option value="large">Large</option>
             <% end %>
           </select>

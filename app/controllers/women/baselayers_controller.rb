@@ -21,6 +21,10 @@ class Women::BaselayersController < ApplicationController
     @inventory = Inventory.where(product_id: @product.id, gender_id: @womens.id,
                                   colour_id: @colour.id)
 
+    @small_inventory = @inventory.find_by(size_id: @small.id)
+    @med_inventory = @inventory.find_by(size_id: @medium.id)
+    @large_inventory = @inventory.find_by(size_id: @large.id)
+
   end
 
 end
